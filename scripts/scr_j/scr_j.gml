@@ -1,0 +1,1 @@
+return argument0 div global.grid_size
