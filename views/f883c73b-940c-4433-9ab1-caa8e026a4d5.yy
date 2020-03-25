@@ -11,7 +11,8 @@
         "679f3d78-2d5f-49c6-8dd7-e56971b25064",
         "9cd06264-7d9d-45c0-9cdf-eff946df8766",
         "b2031ecf-9b8c-4919-bc02-1b9f244ec710",
-        "1abb8515-e1d5-451f-9c9e-d18a32656579"
+        "1abb8515-e1d5-451f-9c9e-d18a32656579",
+        "59a4bae2-f0cc-41a2-bb1b-ee62dd5c5ce7"
     ],
     "filterType": "GMScript",
     "folderName": "Grid",
