@@ -1,8 +1,8 @@
 
 
 if !process_busy {
-	instance_current = instance_find(obj_active_instance_parent, inst_index)
-	with instance_current {
+	inst_current = instance_find(obj_active_instance_parent, inst_index)
+	with inst_current {
 		event_perform(ev_other, ev_user0)	
 	}
 	inst_index++

@@ -9,6 +9,9 @@ general_state = scr_stub
 
 control_script = scr_stub
 
+//// animation sp
+anim_move_sp = 1.5
+
 //// properties
 invisible = false
 static = false

@@ -1,4 +1,4 @@
 
 event_inherited()
 
-control_script = scr_mob_control
+general_state = scr_mob_control
