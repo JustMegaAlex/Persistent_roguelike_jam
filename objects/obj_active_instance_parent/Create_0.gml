@@ -8,3 +8,8 @@ image_angle = 90
 general_state = scr_stub
 
 control_script = scr_stub
+
+//// properties
+invisible = false
+static = false
+fraction = Fraction.neutral

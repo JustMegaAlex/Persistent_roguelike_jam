@@ -2,18 +2,8 @@
     "id": "e21a8e6a-2ca9-44e1-b448-cce8c6486694",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_hero",
+    "name": "obj_manned_ship",
     "eventList": [
-        {
-            "id": "f329e664-9f1c-48ea-ade4-84c200fe54da",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "e21a8e6a-2ca9-44e1-b448-cce8c6486694"
-        },
         {
             "id": "23ac8fed-93ce-4dac-8be0-298c42f3ac98",
             "modelName": "GMEvent",
