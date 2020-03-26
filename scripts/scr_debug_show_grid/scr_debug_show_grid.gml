@@ -1,6 +1,9 @@
 ///@arg grid
 ///@arg x
 ///@arg y
+
+if !obj_sys.debug_show {return}
+
 var i,j,grid,x0,y0;
 grid = argument0;
 x0 = argument1;

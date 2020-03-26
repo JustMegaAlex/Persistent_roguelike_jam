@@ -42,6 +42,7 @@ view_h = view_get_hport(view_camera[0])
 
 scr_debug_INI()
 
+
 //// space active objects properties
 enum Fraction {
 	neutral,

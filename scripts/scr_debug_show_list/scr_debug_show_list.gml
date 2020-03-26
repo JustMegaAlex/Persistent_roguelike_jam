@@ -1,4 +1,7 @@
 ///scr_debug_showList(list,x,y)
+
+if !obj_sys.debug_show {return}
+
 var i,list,x0,y0;
 list = argument0;
 x0 = argument1;

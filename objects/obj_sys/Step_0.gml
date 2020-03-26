@@ -10,7 +10,10 @@ if !process_busy {
 }
 if inst_index == instance_number(obj_active_instance_parent)
 	inst_index = 0
-	
+
+if keyboard_check_pressed(vk_tab)
+	debug_show = !debug_show
+
 //if keyboard_check_pressed(ord("E"))
 //	if room == rm_main
 //		room_goto(rm_battle)
