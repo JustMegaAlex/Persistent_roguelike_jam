@@ -16,3 +16,15 @@ anim_move_sp = 1.5
 invisible = false
 static = false
 fraction = Fraction.neutral
+
+//// battle vars
+// moving
+sp_max = 3
+sp_x_to = 0	// how sp_x and sp_y change
+sp_y_to = 0	//
+sp_x = 0
+sp_y = 0
+acc = 0.15
+dir = 0
+move_v = 0
+move_h = 0
