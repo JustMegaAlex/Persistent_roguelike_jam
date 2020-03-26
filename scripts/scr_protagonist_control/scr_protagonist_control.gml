@@ -17,7 +17,12 @@ if input_dir {
 	input_dir--
 	var delta_i = lengthdir_x(1, input_dir*90)
 	var delta_j = lengthdir_y(1, input_dir*90)
-	if scr_try_move(delta_i, delta_j) {
+	var inst = scr_cell_get_inst(i+delta_i, j+ delta_j)
+	if inst {
+		if inst.object_index == obj_mob
+			scr_start_battle(inst)
+	}
+	else scr_try_move(delta_i, delta_j) {
 		scr_control_reset()
 		alarm[0] = 1
 	}
