@@ -30,12 +30,12 @@ list_abilities = ds_list_create()
 
 //// battle vars
 // moving
-sp_max = 3
+sp_max = 1.5
 sp_x_to = 0	// how sp_x and sp_y change
 sp_y_to = 0	//
 sp_x = 0
 sp_y = 0
-acc = 0.15
+acc = 0.2
 dir = 0
 move_v = 0
 move_h = 0
