@@ -359,14 +359,6 @@
             }
         },
         {
-            "Key": "a21d7814-e1e0-43db-8f9d-03b42568fe39",
-            "Value": {
-                "id": "b628f4f4-1d1f-4482-9b7f-8f666cfc257b",
-                "resourcePath": "sprites\\spr_hp_up\\spr_hp_up.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "85d0c86d-3f86-4cf6-9f1a-ba5ab3ea1252",
