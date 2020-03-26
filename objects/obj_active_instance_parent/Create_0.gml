@@ -17,6 +17,17 @@ invisible = false
 static = false
 fraction = Fraction.neutral
 
+//// equipment
+eq_engine = noone
+eq_weapon = noone
+eq_supply_sys = noone
+
+//// stats
+energy_capacity = 5
+
+//// abilities
+list_abilities = ds_list_create()
+
 //// battle vars
 // moving
 sp_max = 3
