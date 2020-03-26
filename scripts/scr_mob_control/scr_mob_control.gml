@@ -9,4 +9,7 @@ while !scr_try_move(delta_i, delta_j) {
 }
 
 scr_control_reset()
+
+scr_sys_process_continue()
+
 alarm[0] = 1
