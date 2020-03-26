@@ -1,9 +1,12 @@
 
 // control keys
-key_left = keyboard_check(vk_left)||keyboard_check(ord("A"))
-key_right = keyboard_check(vk_right)||keyboard_check(ord("D"))
-key_up = keyboard_check(vk_up)||keyboard_check(ord("W"))
-key_down = keyboard_check(vk_down)||keyboard_check(ord("S"))
+key_left = keyboard_check(vk_left)||keyboard_check(ord("A"));
+key_right = keyboard_check(vk_right)||keyboard_check(ord("D"));
+key_up = keyboard_check(vk_up)||keyboard_check(ord("W"));
+key_down = keyboard_check(vk_down)||keyboard_check(ord("S"));
+
+move_h = key_right - key_left
+move_v = key_down - key_up
 
 // moving
 dir = point_direction(0, 0, move_h, move_v)
