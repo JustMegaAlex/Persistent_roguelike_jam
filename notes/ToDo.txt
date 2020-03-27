@@ -1,0 +1,8 @@
+---------ToDo---------
+First:
+> universe screen ui
+> battle screen ui
+> ship systems logic
+> dialogs
+> level generation
+> AI
