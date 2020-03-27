@@ -22,9 +22,13 @@ if !battle_end {
 }
 else {
 	//// end battle
-	if oponent_dead
+	if oponent_dead {
+		scr_cell_clear(oponent_world)
 		instance_destroy(oponent_world)
-	if protagonist_dead
+	}
+	if protagonist_dead {
+		scr_cell_clear(obj_manned_ship)
 		instance_destroy(obj_manned_ship)
+	}
 	instance_destroy()
 }
