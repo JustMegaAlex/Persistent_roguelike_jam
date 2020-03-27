@@ -24,6 +24,7 @@ eq_supply_sys = noone
 
 //// stats
 energy_capacity = 5
+durability = 50
 
 //// abilities
 list_abilities = ds_list_create()

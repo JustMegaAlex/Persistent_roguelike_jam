@@ -8,3 +8,4 @@ fraction = Fraction.human
 
 //// equipment
 eq_weapon = obj_equipment.wp_crusher
+weapon_level = 0
