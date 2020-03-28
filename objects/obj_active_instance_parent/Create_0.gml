@@ -24,6 +24,7 @@ eq_supply_sys = noone
 
 //// stats
 energy_capacity = 5
+energy = energy_capacity
 durability = 50
 
 //// abilities
