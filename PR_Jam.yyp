@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "51d4a98e-a7b0-4b54-8764-b6a69c4632f5",
+            "Value": {
+                "id": "468369c6-146b-4c36-a57c-701071c8cfd4",
+                "resourcePath": "sprites\\spr_ui_enrg_tail\\spr_ui_enrg_tail.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "54206ffb-29bc-43eb-bb18-dd607d394c64",
             "Value": {
                 "id": "edfb122f-7450-40f5-b23a-502e60354433",
@@ -308,6 +316,14 @@
                 "id": "3d301c28-3f81-42a7-960f-3728ade15141",
                 "resourcePath": "options\\windowsuap\\options_windowsuap.yy",
                 "resourceType": "GMWindowsUAPOptions"
+            }
+        },
+        {
+            "Key": "7e2c804f-8494-4cfb-812f-e3ea15eb210d",
+            "Value": {
+                "id": "2ad5a26a-6ca5-462e-b2ad-edf5769d18b6",
+                "resourcePath": "sprites\\spr_ui_enrg_middle\\spr_ui_enrg_middle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -500,6 +516,14 @@
                 "id": "00b56f6e-9fc2-46bf-86b3-bf5a743a7fdf",
                 "resourcePath": "scripts\\scr_end_battle\\scr_end_battle.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ba82fd46-68dc-4fbd-b9ea-0707ff4fa574",
+            "Value": {
+                "id": "e4452df9-b642-4702-8b03-7150e9d5ef1e",
+                "resourcePath": "sprites\\spr_ui_enrg_cell\\spr_ui_enrg_cell.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -700,6 +724,14 @@
                 "id": "f07fb7ee-dd20-40a7-b285-2d0b3a77223f",
                 "resourcePath": "objects\\obj_equipment\\obj_equipment.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fe1c9b31-6404-40d4-a012-6f545f87350b",
+            "Value": {
+                "id": "cdfc5341-8fd2-42af-bda6-d3b0dfeddc02",
+                "resourcePath": "views\\fe1c9b31-6404-40d4-a012-6f545f87350b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
