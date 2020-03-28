@@ -2,8 +2,12 @@
 ds_grid_clear(global.grid, 0) 
 
 if sector_type == "random" {
-	if !protagonist_inst
+	if !protagonist_inst {
 		instance_create_layer(scr_x(1), scr_y(1), "Instances", obj_manned_ship)
+		///////
+		instance_create_layer(scr_x(2), scr_y(1), "Instances", obj_mob)
+		//////
+	}
 	 aster_num = irandom_range(4, 10)
 	 mob_num = irandom_range(3, 7)
 	 

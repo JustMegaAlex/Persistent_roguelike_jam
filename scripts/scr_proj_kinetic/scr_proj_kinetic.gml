@@ -1,14 +1,11 @@
 
 y -= sp
-var got_him = instance_place(x, y, get_him)
-if got_him {
+var got_him = instance_place(x, y, obj_active_instance_parent)
+if got_him and got_him != host {
 	got_him.durability -= damage
 	
 	if !got_him.durability {
 		instance_destroy(got_him)
-		if !instance_find(get_him, 0) {
-			scr_end_battle()
-		}
 	}
 	
 	instance_destroy()

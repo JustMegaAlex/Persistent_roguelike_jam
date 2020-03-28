@@ -7,8 +7,7 @@ general_state = scr_protagonist_control
 fraction = Fraction.human
 
 //// equipment
-scr_eq_set_weapon(obj_equipment.wp_crusher)
-weapon_level = 0
+eq_weapon = scr_eq_get_instance(obj_equipment.wp_crusher)
 
 //// ui 
 ui_enrg_bar = spr_ui_enrg_middle

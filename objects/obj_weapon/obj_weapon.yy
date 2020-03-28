@@ -5,16 +5,6 @@
     "name": "obj_weapon",
     "eventList": [
         {
-            "id": "8c87f19a-bfdb-46a6-a69d-2113ce4e5938",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "16689e8c-5baf-4594-932a-a1b1097f298d"
-        },
-        {
             "id": "53d0c360-dcb4-4d9c-9c41-1cee138dd68b",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -48,7 +38,7 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

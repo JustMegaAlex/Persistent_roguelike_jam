@@ -11,3 +11,10 @@ wp_crusher.sp = 5
 wp_crusher.dmg_levels = [15,20,30]
 wp_crusher.consume = "energy"
 ds_list_add(list_weapons, wp_crusher)
+
+with obj_weapon {
+	level = 0
+	persistent = true
+	visible = false
+	action = scr_stub // weapon is not a proj itself
+}
