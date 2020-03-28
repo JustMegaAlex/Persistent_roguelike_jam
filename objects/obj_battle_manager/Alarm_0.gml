@@ -24,7 +24,7 @@ else {
 	//// end battle
 	if oponent_dead {
 		scr_cell_clear(oponent_world)
-		instance_destroy(oponent_world)
+		instance_destroy(oponent_world)	
 	}
 	if protagonist_dead {
 		scr_cell_clear(obj_manned_ship)

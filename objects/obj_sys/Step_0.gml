@@ -1,6 +1,6 @@
 
 
-if !process_busy {
+if input_mode == Input.world and !process_busy {
 	inst_current = instance_find(obj_active_instance_parent, inst_index)
 	with inst_current {
 		event_perform(ev_other, ev_user0)	

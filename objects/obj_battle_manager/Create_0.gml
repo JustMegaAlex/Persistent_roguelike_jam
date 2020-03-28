@@ -11,6 +11,7 @@ oponent_battle = noone
 dialog_obj = noone
 
 // to battle
+rm_return_to = room
 room_goto(rm_battle)
 
 alarm[0] = 1

@@ -1,21 +1,21 @@
 //////////init gameplay
+
+in_test_sector = false
+
 //// ui
-//window_set_fullscreen(true)
+// window_set_fullscreen(true)
 // ui parts enum
-enum Sys_ui{
+enum Input{
 	menu,			// obj_sys controlled states
-	normal,			//
-	//dialog,			//
+	world,			//
+	dialog,			//
 }
 
-ui_part = Sys_ui.normal
-ui_mouse_over_obj = noone	// is affected by ui elements
-ui_controller = noone	//
-ui_view = view_camera[0]
+input_mode = Input.world
 
 //// game_grid
-global.level_w = 24
-global.level_h = 24
+global.level_w = 15
+global.level_h = 10
 global.grid_size = 16
 global.grid = ds_grid_create(global.level_w, global.level_h)
 
@@ -49,4 +49,9 @@ enum Fraction {
 	human,
 	skreed,
 	archon
+}
+
+if !in_test_sector {
+	scr_start_game("random", noone)
+	room_goto(rm_sector)
 }

@@ -14,7 +14,7 @@ with obj_battle_manager {
 		instance_destroy(obj_manned_ship)
 		
 	battle_end = true
-	room_goto(rm_main)		
+	room_goto(rm_return_to)		
 	alarm[0] = 1
 }
 
