@@ -5,14 +5,8 @@ if !battle_end {
 	
 	with instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_manned_ship) {
 		control_script = scr_protagonist_battle
-		parent_proj = instance_create_layer(x, y, layer, obj_proj)
-		parent_proj.sprite_index = eq_weapon.sprite_index
-		parent_proj.sp = eq_weapon.sp
-		parent_proj.action = eq_weapon.action
-		parent_proj.host_ship = id
-		parent_proj.visible = false
-		parent_proj.damage = eq_weapon.dmg_levels[weapon_level]
-		parent_proj.get_him = obj_battle_manager.oponent_battle
+		obj_manned_ship.eq_weapon.persistent = true
+		obj_manned_ship.eq_weapon.alarm[0] = 1
 	}
 	
 	with oponent_battle {
@@ -29,6 +23,9 @@ else {
 	if protagonist_dead {
 		scr_cell_clear(obj_manned_ship)
 		instance_destroy(obj_manned_ship)
+	}
+	else {
+		obj_manned_ship.eq_weapon.persistent = false
 	}
 	instance_destroy()
 }
