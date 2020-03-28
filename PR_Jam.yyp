@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "60c4dc6c-da7a-4631-a3ae-3bc576c57ed6",
+            "Value": {
+                "id": "dd13957a-8944-4bc9-a6d8-a6aac887dda4",
+                "resourcePath": "sprites\\spr_ui_crasher_cell\\spr_ui_crasher_cell.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6181b905-ea6d-47dd-87b6-9046859f61cd",
             "Value": {
                 "id": "11ef785c-549e-4881-a735-a47c79de3983",
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "943a0a1a-6b3a-4e0f-b947-9a5ad5175ff4",
+            "Value": {
+                "id": "60d21c66-3d50-4533-8e15-a1827098424c",
+                "resourcePath": "sprites\\spr_ui_crasher_bar\\spr_ui_crasher_bar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "95bc5102-a967-4067-acb4-44e40ccb5c6a",
             "Value": {
                 "id": "2a32c3e9-3f7e-4bdc-9de1-3c90a6b8c13e",
@@ -460,6 +476,14 @@
                 "id": "c6ee2136-6655-4583-a53f-b301200d1be4",
                 "resourcePath": "views\\97478d3c-2e12-4527-87a3-4a110885c6a9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "974a4c72-533f-4790-93aa-c9eb8a188eb4",
+            "Value": {
+                "id": "327abcb8-f4b1-4505-abf9-4cd25a1476e3",
+                "resourcePath": "sprites\\spr_ui_usable_item\\spr_ui_usable_item.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -500,6 +524,14 @@
                 "id": "c098df69-2968-4293-9808-eeee140b2176",
                 "resourcePath": "scripts\\scr_j\\scr_j.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a64e3273-d546-4eb4-99d2-36c388cfdb17",
+            "Value": {
+                "id": "076651ff-31e8-474e-9ed4-166333da7185",
+                "resourcePath": "sprites\\spr_ui_crasher_bar_tail\\spr_ui_crasher_bar_tail.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
