@@ -1,6 +1,6 @@
 //////////init gameplay
 
-in_test_sector = false
+testing_sector = false
 
 //// ui
 // window_set_fullscreen(true)
@@ -51,7 +51,9 @@ enum Fraction {
 	archon
 }
 
-if !in_test_sector {
+if testing_sector {
+	room_goto(rm_testing)
+}
+else {
 	scr_start_game("random", noone)
-	room_goto(rm_sector)
 }

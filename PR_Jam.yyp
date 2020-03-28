@@ -58,7 +58,7 @@
             "Key": "11911b10-69f2-4c18-b49d-4eb71c560658",
             "Value": {
                 "id": "2566d5c2-d435-4193-b0c4-0758f6df7a4b",
-                "resourcePath": "rooms\\rm_sector\\rm_sector.yy",
+                "resourcePath": "rooms\\rm_testing\\rm_testing.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -274,7 +274,7 @@
             "Key": "667c6e9a-0a27-4496-bc04-4034b0219b00",
             "Value": {
                 "id": "756a4aa0-3735-4b4d-acc2-2c037f20eeec",
-                "resourcePath": "objects\\obj_ui_enrg\\obj_ui_enrg.yy",
+                "resourcePath": "objects\\obj_ui_enrg_mockup\\obj_ui_enrg_mockup.yy",
                 "resourceType": "GMObject"
             }
         },
