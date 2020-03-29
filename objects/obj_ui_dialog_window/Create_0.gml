@@ -1,15 +1,15 @@
 
 text = ""
-var x_indent = 60
+var x_indent = 8
 text_with = sprite_width - x_indent
 text_x = x + x_indent * 0.5
-text_y = y + 20
+text_y = y + 8
 
-// button = noone
-btn_x = text_x
-btn_y = y + sprite_height - 100
-space_between_buttons = 30
+//// choices
+choice_x = text_x
+choice_y = y + sprite_height - 10
+space_between_choices = 16
 
-//// dialog parameters
-page = 0
-dialog_obj = noone
+//// dialog tree vars
+choice = 0
+choice_num = 0

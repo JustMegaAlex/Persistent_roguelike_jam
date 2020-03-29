@@ -6,6 +6,11 @@ if obj_manned_ship.key_action {
 			scr_sys_process_continue()
 			break
 		}
+		case "dialog": {
+			obj_manned_ship.control_state = Control.dialog
+			proceed here
+			break
+		}
 	}
 	instance_destroy()
 }

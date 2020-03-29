@@ -6,7 +6,8 @@ general_state = scr_protagonist_control
 enum Control {
 	normal,
 	special_action,
-	recombination
+	recombination,
+	dialog
 }
 
 control_state = Control.normal

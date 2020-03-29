@@ -9,6 +9,7 @@ list_actions = ds_list_create()
 
 //// form available actions list
 ds_list_add(list_actions, "recombination")
+ds_list_add(list_actions, "dialog")
 
 actions_num = ds_list_size(list_actions)
 
