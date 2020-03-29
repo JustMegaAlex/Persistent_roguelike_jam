@@ -17,17 +17,19 @@ if !battle_end {
 }
 else {
 	//// end battle
-	oponent_world.persistent = false
+	
 	
 	//if oponent_dead {
 	//	scr_cell_clear(oponent_world)
 	//}
 	if !oponent_dead {
+		
 		with oponent_world {
 			control_script = scr_mob_control
 			image_angle = 90
 			x = scr_x(i)
 			y = scr_y(j)
+			persistent = false
 		}
 	}
 	
