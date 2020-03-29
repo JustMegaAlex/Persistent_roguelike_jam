@@ -11,6 +11,7 @@ wp_crusher.ui_cell = spr_ui_crasher_cell
 wp_crusher.ui_spr = spr_ui_crasher_bar
 wp_crusher.ui_left_tail = spr_ui_crasher_bar_left_tail
 wp_crusher.capacity = 6
+wp_crusher.shoot_delay = 30
 wp_crusher.charge = wp_crusher.capacity
 wp_crusher.energy_consumption = 1
 wp_crusher.type = "crusher"
