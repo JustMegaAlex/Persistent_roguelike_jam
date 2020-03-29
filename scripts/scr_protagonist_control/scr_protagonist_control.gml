@@ -4,14 +4,18 @@ key_right = keyboard_check_pressed(vk_right)
 key_left = keyboard_check_pressed(vk_left)
 key_up = keyboard_check_pressed(vk_up)
 key_down = keyboard_check_pressed(vk_down)
-key_recomb = keyboard_check_pressed(ord("X"))
-key_use_item = keyboard_check_pressed(ord("C"))
+key_action = keyboard_check_pressed(ord("Z"))
+key_open_actions = keyboard_check_pressed(ord("Q"))
 
-if key_recomb
-	control_state = Control.recombination
 
 switch control_state {
+	
 	case Control.normal: {
+		
+		if key_open_actions {
+			instance_create_layer(0, 0, "Sys", obj_ui_special_actions)
+			control_state = Control.special_action
+		}
 		var input_dir = key_right + key_up*2 + key_left*3 + key_down*4
 		// warn on inadequate input
 		if input_dir > 4
@@ -37,7 +41,10 @@ switch control_state {
 	}
 	
 	case Control.special_action: {
-	
+		if key_open_actions {
+			instance_destroy(obj_ui_special_actions)
+			control_state = Control.normal
+		}
 		break
 	}
 	
