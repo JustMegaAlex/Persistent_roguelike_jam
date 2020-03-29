@@ -1,8 +1,8 @@
 {
-    "id": "667c6e9a-0a27-4496-bc04-4034b0219b00",
+    "id": "21f93425-c9df-4cba-acee-6490c109c8e8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_ui_enrg_mockup",
+    "name": "obj_ui_weapon_bar_mockup",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "7e2c804f-8494-4cfb-812f-e3ea15eb210d",
+    "spriteId": "943a0a1a-6b3a-4e0f-b947-9a5ad5175ff4",
     "visible": true
 }

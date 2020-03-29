@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "21f93425-c9df-4cba-acee-6490c109c8e8",
+            "Value": {
+                "id": "a5150b7d-f1a9-43a5-8e7f-cd361690a847",
+                "resourcePath": "objects\\obj_ui_weapon_bar_mockup\\obj_ui_weapon_bar_mockup.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2a423182-54c9-41ce-b5ee-113ea619e8ac",
             "Value": {
                 "id": "066d7540-a267-4b2e-89a7-623a99a4235e",
@@ -647,6 +655,14 @@
             }
         },
         {
+            "Key": "cbc7c418-3fac-4c10-9ee1-072868ddb986",
+            "Value": {
+                "id": "1120251b-79a7-44bd-b108-03413d49f180",
+                "resourcePath": "objects\\obj_ui_mockup_prent\\obj_ui_mockup_prent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "fa10f2ce-b48d-48e3-beea-b6a99466aaa6",
@@ -700,6 +716,14 @@
                 "id": "ebb58d24-cb72-4fbc-9793-331689b4de9c",
                 "resourcePath": "scripts\\scr_eq_get_instance\\scr_eq_get_instance.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "db93cf82-55ee-42d6-9de1-21ab1a68fc2a",
+            "Value": {
+                "id": "373d070f-4515-4c1e-ac06-94f696af220b",
+                "resourcePath": "objects\\obj_ui_usable_mockup\\obj_ui_usable_mockup.yy",
+                "resourceType": "GMObject"
             }
         },
         {
