@@ -1,7 +1,7 @@
 
 choice_change = obj_manned_ship.key_down - obj_manned_ship.key_up
 
-choice = scr_cycle_val(choice, -choice_change, array_length_1d(choices)-2)
+choice = scr_cycle_val(choice, -choice_change, array_length_1d(choices)-1)
 
 script_execute(dialog_tree)
 

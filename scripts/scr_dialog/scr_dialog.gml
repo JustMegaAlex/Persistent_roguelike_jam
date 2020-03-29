@@ -36,6 +36,7 @@ if obj_manned_ship.key_action {
 	if is_array(choices) {
 		choices = choices[choice+1]
 		choices = choices[1]
+		choice = 0
 	}
 }
 
