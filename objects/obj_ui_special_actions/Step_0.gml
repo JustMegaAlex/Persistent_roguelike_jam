@@ -8,7 +8,7 @@ if obj_manned_ship.key_action {
 		}
 		case "dialog": {
 			obj_manned_ship.control_state = Control.dialog
-			proceed here
+			scr_dialog_open(scr_dialog)
 			break
 		}
 	}
@@ -17,7 +17,7 @@ if obj_manned_ship.key_action {
 
 scroll_dir = obj_manned_ship.key_right - obj_manned_ship.key_left
 
-choice = scr_cicle_val(choice, scroll_dir, actions_num)
+choice = scr_cycle_val(choice, scroll_dir, actions_num)
 
 infc_rot_to += scroll_dir*infc_icon_angle
 
