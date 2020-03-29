@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "7f2d1ce9-ed6f-4769-ab80-d5f70c458821",
+            "Value": {
+                "id": "6d1637cc-eac8-4f66-b2dc-f5e59d074a71",
+                "resourcePath": "objects\\obj_ui_dialog_window\\obj_ui_dialog_window.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7fe5e182-47fd-4768-a3ea-99a7bb962b90",
             "Value": {
                 "id": "6bbce28f-020f-441f-bfe1-e43a67e52ae7",
@@ -475,6 +483,14 @@
             "Value": {
                 "id": "60d21c66-3d50-4533-8e15-a1827098424c",
                 "resourcePath": "sprites\\spr_ui_crasher_bar\\spr_ui_crasher_bar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "958bfd7a-5a30-476e-b20b-297fa4742e47",
+            "Value": {
+                "id": "90adf408-d646-47e6-8876-a0d16a88e03b",
+                "resourcePath": "sprites\\spr_ui_dialog_choice\\spr_ui_dialog_choice.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -628,6 +644,14 @@
                 "id": "00b56f6e-9fc2-46bf-86b3-bf5a743a7fdf",
                 "resourcePath": "scripts\\scr_end_battle\\scr_end_battle.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b8b0db02-dc08-4d73-8323-7132799bf8fd",
+            "Value": {
+                "id": "f951ac11-1130-491a-8dfa-0e8debe7c719",
+                "resourcePath": "sprites\\spr_ui_dialog_window\\spr_ui_dialog_window.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
