@@ -12,6 +12,7 @@ wp_crusher.ui_spr = spr_ui_crasher_bar
 wp_crusher.ui_left_tail = spr_ui_crasher_bar_left_tail
 wp_crusher.capacity = 6
 wp_crusher.charge = wp_crusher.capacity
+wp_crusher.energy_consumption = 1
 wp_crusher.type = "crusher"
 wp_crusher.proj_action = scr_proj_kinetic
 wp_crusher.sp = 5
