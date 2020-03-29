@@ -8,6 +8,7 @@ fraction = Fraction.human
 
 //// equipment
 eq_weapon = scr_eq_get_instance(obj_equipment.wp_crusher)
+eq_phase = scr_eq_get_instance(obj_equipment.ph_basic)
 
 //// ui 
 ui_enrg_bar = spr_ui_enrg_middle
@@ -23,3 +24,8 @@ ui_wp_cell_size = sprite_get_width(eq_weapon.ui_spr)
 ui_wp_bar_x = ui_enrg_x
 ui_wp_bar_rel_y = obj_ui_weapon_bar_mockup.y - scr_camy(0)
 ui_wp_bar_y = scr_camy(0) + ui_wp_bar_rel_y
+
+ui_usable_rel_x = obj_ui_usable_mockup.x - obj_ui_enrg_mockup.x
+ui_usable_rel_y = obj_ui_usable_mockup.y - scr_camy(0)
+ui_usable_x = ui_enrg_x + ui_usable_rel_x
+ui_usable_y = scr_camy(0) + ui_usable_rel_y

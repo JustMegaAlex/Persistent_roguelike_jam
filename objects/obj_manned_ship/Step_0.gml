@@ -10,3 +10,7 @@ ui_enrg_left_tail_x = ui_enrg_x+ui_enrg_cell_size*energy_capacity
 ui_wp_bar_x = ui_enrg_x
 ui_wp_bar_y = scr_camy(0) + ui_wp_bar_rel_y
 ui_wp_left_tail_x = ui_wp_bar_x + ui_wp_cell_size*eq_weapon.capacity
+
+//// usable cell
+ui_usable_x = ui_enrg_x + ui_usable_rel_x
+ui_usable_y = scr_camy(0) + ui_usable_rel_y
