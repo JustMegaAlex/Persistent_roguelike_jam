@@ -6,5 +6,5 @@ if x != scr_x(i) or y != scr_y(j) {
 	alarm[0] = 1
 }
 else {
-	obj_sys.process_busy = false
+	scr_sys_process_continue()
 }

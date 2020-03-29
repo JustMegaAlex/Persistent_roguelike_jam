@@ -3,10 +3,18 @@ event_inherited()
 
 general_state = scr_protagonist_control
 
+enum Control {
+	normal,
+	special_action,
+	recombination
+}
+
+control_state = Control.normal
 //// properties
 fraction = Fraction.human
 
 //// equipment
+frame_active = true
 eq_weapon = scr_eq_get_instance(obj_equipment.wp_crusher)
 eq_phase = scr_eq_get_instance(obj_equipment.ph_basic)
 

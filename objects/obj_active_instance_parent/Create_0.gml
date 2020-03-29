@@ -18,17 +18,14 @@ static = false
 fraction = Fraction.neutral
 
 //// equipment
-eq_engine = noone
 eq_weapon = noone
-eq_supply_sys = noone
+eq_phase = noone
 
 //// stats
 energy_capacity = 5
 energy = energy_capacity
 durability = 50
-
-//// abilities
-list_abilities = ds_list_create()
+frame_active = false
 
 //// battle vars
 // moving
@@ -41,3 +38,6 @@ acc = 0.2
 dir = 0
 move_v = 0
 move_h = 0
+
+//// abilities
+list_abilities = ds_list_create()
