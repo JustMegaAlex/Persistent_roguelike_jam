@@ -31,9 +31,19 @@ if i0 > i1 or j0 > j1 {
 }
 
 repeat attempts {
+	var free = true
 	ii = i0 + irandom(i1 - i0)
 	jj = j0 + irandom(j1 - j0)
-	if !scr_cell_get_inst(ii, jj) {
+	// check all cells we are going to occupy
+	for(var i=0; i<inst.size_in_universe; i++) 
+		for(var j=0; j<inst.size_in_universe; j++)
+			if scr_cell_get_inst(ii+i, jj+j) {
+				free = false
+				i = inst.size_in_universe	// quit external for loop
+				break
+			}
+	
+	if free {
 		scr_set_grid_pos(ii, jj, inst)
 		scr_set_pos(ii, jj, inst)
 		return inst

@@ -67,7 +67,7 @@ if sector_type == "random" {
 				case "empty": {
 					////
 					if !protagonist_inst {
-						 scr_set_grid_pos_region(area_i, area_j,
+						 protagonist_inst = scr_set_grid_pos_region(area_i, area_j,
 												area_i + col_sizes[i],
 												area_j + col_sizes[j],
 												obj_manned_ship)
@@ -90,8 +90,6 @@ if sector_type == "random" {
 }
 
 for(var i=0; i<15; i++) {
-	ii = irandom(global.level_w)
-	jj = irandom(global.level_h)
 	scr_set_grid_pos_region(0, 0, global.level_w, global.level_h, obj_mob)
 }
 	
