@@ -7,12 +7,12 @@ ds_grid_clear(global.grid, 0)
 if sector_type == "random" {
 	
 	bigger_sector = scr_chance(0.5)
-	cols_num = 3 + bigger_sector
-	rows_num = 3 + bigger_sector
+	cols_num = 2 + bigger_sector
+	rows_num = 2 + bigger_sector
 	areas = ds_list_create()
 	// default areas
-	scr_fill_list_from_array(areas, ["star", "planet", "planet", "aster", "aster", "empty"])
-	
+	//scr_fill_list_from_array(areas, ["star", "planet", "planet", "aster", "aster", "empty"])
+	scr_fill_list_from_array(areas, ["star", "planet", "aster", "empty"])
 	// add random areas
 	for(var i=ds_list_size(areas); i<cols_num*rows_num; i++)
 		areas[| i] = choose("planet", "aster", "aster", "empty", "empty")
