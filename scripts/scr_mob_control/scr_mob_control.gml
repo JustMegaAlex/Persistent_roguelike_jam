@@ -8,8 +8,6 @@ while !scr_try_move(delta_i, delta_j) {
 	delta_j = lengthdir_y(1, input_dir*90)
 }
 
-scr_control_reset()
+control_script = scr_move
 
 scr_sys_process_continue()
-
-alarm[0] = 1

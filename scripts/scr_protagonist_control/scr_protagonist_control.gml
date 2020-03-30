@@ -33,9 +33,8 @@ switch control_state {
 				}
 			}
 			if scr_try_move(delta_i, delta_j) {
-				scr_control_reset()
-				alarm[0] = 1
-				alarm[1] = turn_delay
+				control_script = scr_move
+				alarm[0] = turn_delay
 			}
 		}	
 		break

@@ -3,7 +3,7 @@ event_inherited()
 
 general_state = scr_protagonist_control
 
-turn_delay = 4
+turn_delay = 2
 
 enum Control {
 	normal,
