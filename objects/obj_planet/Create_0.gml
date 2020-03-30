@@ -1,7 +1,7 @@
 
 event_inherited()
 
-planet_size = 4
+planet_size = 3
 
 for(var ii=0; ii<planet_size; ii++) 
 	for(var jj=0; jj<planet_size; jj++)
