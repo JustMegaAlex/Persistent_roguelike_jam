@@ -11,6 +11,9 @@ if obj_manned_ship.key_action {
 			scr_dialog_open(scr_dialog)
 			break
 		}
+		case "warp": {
+			scr_start_game("random", instance_find(obj_manned_ship, 0))
+		}
 	}
 	instance_destroy()
 }
