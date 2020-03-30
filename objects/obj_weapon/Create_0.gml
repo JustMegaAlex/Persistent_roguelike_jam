@@ -1,0 +1,3 @@
+
+shoot = false
+triggered = false

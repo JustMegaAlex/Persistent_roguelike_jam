@@ -6,6 +6,7 @@ if !battle_end {
 		image_angle = 270
 		x = obj_opponent.x
 		y = obj_opponent.y
+		eq_weapon.alarm[0] = 2
 	}
 	
 	with obj_manned_ship {
@@ -30,6 +31,7 @@ else {
 			x = scr_x(i)
 			y = scr_y(j)
 			persistent = false
+			battle_state = Battle.idle
 		}
 	}
 	
