@@ -20,8 +20,8 @@ if sector_type == "random" {
 	
 	// areas sizes
 	for(var i=0; i<cols_num; i++) {
-		col_sizes[i] = random(3) + 6 - bigger_sector*2
-		row_sizes[i] = random(3) + 6 - bigger_sector*2
+		col_sizes[i] = irandom(3) + 6 - bigger_sector*2
+		row_sizes[i] = irandom(3) + 6 - bigger_sector*2
 		global.level_w += col_sizes[i]
 		global.level_h += row_sizes[i]
 	}
@@ -57,36 +57,28 @@ if sector_type == "random" {
 				case "aster": {
 					num = floor(col_sizes[i]*row_sizes[j]*(0.4 + random(0.3)))
 					repeat num {
-						ii = area_i + irandom(col_sizes[i])
-						jj = area_j + irandom(row_sizes[i])
-						while scr_cell_get_inst(ii, jj) {
-							ii = area_i + irandom(col_sizes[i])
-							jj = area_j + irandom(row_sizes[i])
-						}
-						inst = instance_create_layer(0, 0, "instances", obj_asteroid)
-						scr_set_grid_pos(ii, jj, inst)
-						scr_set_pos(ii, jj, inst)
+						scr_set_grid_pos_region(area_i, area_j,
+												area_i + col_sizes[i],
+												area_j + col_sizes[j],
+												obj_asteroid)
 					}
 					break
 				}
 				case "empty": {
 					////
 					if !protagonist_inst {
-						 protagonist_inst = instance_create_layer(scr_x(area_i), scr_y(area_j), "Instances", obj_manned_ship)
-						 scr_set_pos(ii, jj, protagonist_inst)
+						 scr_set_grid_pos_region(area_i, area_j,
+												area_i + col_sizes[i],
+												area_j + col_sizes[j],
+												obj_manned_ship)
 					}
 					
 					num = floor(col_sizes[i]*row_sizes[j]*(0.1 + random(0.1)))
 					repeat num {
-						ii = area_i + irandom(col_sizes[i])
-						jj = area_j + irandom(row_sizes[i])
-						while scr_cell_get_inst(ii, jj) {
-							ii = area_i + irandom(col_sizes[i])
-							jj = area_j + irandom(row_sizes[i])
-						}
-						inst = instance_create_layer(0, 0, "instances", obj_asteroid)
-						scr_set_grid_pos(ii, jj, inst)
-						scr_set_pos(ii, jj, inst)
+						scr_set_grid_pos_region(area_i, area_j,
+												area_i + col_sizes[i],
+												area_j + col_sizes[j],
+												obj_asteroid)
 					}
 					break
 				}
@@ -100,46 +92,7 @@ if sector_type == "random" {
 for(var i=0; i<15; i++) {
 	ii = irandom(global.level_w)
 	jj = irandom(global.level_h)
-	while scr_cell_get_inst(ii, jj) {
-		ii = irandom(global.level_w)
-		jj = irandom(global.level_h)
-	}
-	inst = instance_create_layer(0, 0, "instances", obj_mob)
-	scr_set_grid_pos(ii, jj, inst)
-	scr_set_pos(ii, jj, inst)
+	scr_set_grid_pos_region(0, 0, global.level_w, global.level_h, obj_mob)
 }
 	
 instance_destroy()	
-	
-	
-//	if !protagonist_inst {
-//		instance_create_layer(scr_x(1), scr_y(1), "Instances", obj_manned_ship)
-//		///////
-//		instance_create_layer(scr_x(2), scr_y(1), "Instances", obj_mob)
-//		//////
-//	}
-//	 aster_num = irandom_range(4, 10)
-//	 mob_num = irandom_range(3, 7)
-	 
-//	 repeat mob_num {
-//		 i = irandom_range(1, global.level_w-1)
-//		 j = irandom_range(1, global.level_h-1)
-//		 while scr_cell_get_inst(i, j) {
-//			i = irandom_range(1, global.level_w-1)
-//			j = irandom_range(1, global.level_h-1)
-//		 }
-//		instance_create_layer(scr_x(i), scr_y(j), "Instances", obj_mob)
-//	 }
-	 
-//	 repeat aster_num {
-//		 i = irandom(global.level_w)
-//		 j = irandom(global.level_h)
-//		 while scr_cell_get_inst(i, j) {
-//			i = irandom(global.level_w)
-//			j = irandom(global.level_h)
-//		 }
-//		instance_create_layer(scr_x(i), scr_y(j), "Instances", obj_asteroid)
-//	 }
-//}
-
-//
