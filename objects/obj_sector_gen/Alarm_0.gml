@@ -11,11 +11,13 @@ if sector_type == "random" {
 	rows_num = 3 + bigger_sector
 	areas = ds_list_create()
 	// default areas
-	areas = scr_fill_list_from_array(areas, ["star", "planet", "planet", "aster", "aster", "empty"])
+	scr_fill_list_from_array(areas, ["star", "planet", "planet", "aster", "aster", "empty"])
 	
 	// add random areas
 	for(var i=ds_list_size(areas); i<cols_num*rows_num; i++)
 		areas[| i] = choose("planet", "aster", "aster", "empty", "empty")
+	ds_list_shuffle(areas)
+	
 	// areas sizes
 	for(var i=0; i<cols_num; i++) {
 		col_sizes[i] = random(3) + 6 - bigger_sector*2
@@ -28,12 +30,12 @@ if sector_type == "random" {
 	ds_grid_resize(global.grid, global.level_w, global.level_h)
 	
 	area_i = 0
+	pos = 0
 	for(var i=0; i<cols_num; i++) {
 		area_j = 0
 		for(var j=0; j<rows_num; j++) {
-			pos = irandom(ds_list_size(areas))
 			area_type = areas[| pos]
-			ds_list_delete(areas, pos)
+			pos++
 			
 			switch area_type {
 				case "star": {
@@ -41,6 +43,7 @@ if sector_type == "random" {
 					ii = area_i + irandom(col_sizes[i] - inst.size_in_universe)
 					jj = area_j + irandom(row_sizes[i] - inst.size_in_universe)
 					scr_set_grid_pos(ii, jj, inst)
+					scr_set_pos(ii, jj, inst)
 					break
 				}
 				case "planet": {
@@ -48,7 +51,8 @@ if sector_type == "random" {
 					ii = area_i + irandom(col_sizes[i] - inst.size_in_universe)
 					jj = area_j + irandom(row_sizes[i] - inst.size_in_universe)
 					scr_set_grid_pos(ii, jj, inst)
-					break	
+					scr_set_pos(ii, jj, inst)
+					break
 				}
 				case "aster": {
 					num = floor(col_sizes[i]*row_sizes[j]*(0.4 + random(0.3)))
@@ -61,6 +65,7 @@ if sector_type == "random" {
 						}
 						inst = instance_create_layer(0, 0, "instances", obj_asteroid)
 						scr_set_grid_pos(ii, jj, inst)
+						scr_set_pos(ii, jj, inst)
 					}
 					break
 				}
@@ -68,6 +73,7 @@ if sector_type == "random" {
 					////
 					if !protagonist_inst {
 						 protagonist_inst = instance_create_layer(scr_x(area_i), scr_y(area_j), "Instances", obj_manned_ship)
+						 scr_set_pos(ii, jj, protagonist_inst)
 					}
 					
 					num = floor(col_sizes[i]*row_sizes[j]*(0.1 + random(0.1)))
@@ -80,6 +86,7 @@ if sector_type == "random" {
 						}
 						inst = instance_create_layer(0, 0, "instances", obj_asteroid)
 						scr_set_grid_pos(ii, jj, inst)
+						scr_set_pos(ii, jj, inst)
 					}
 					break
 				}
@@ -88,6 +95,18 @@ if sector_type == "random" {
 		}
 		area_i += col_sizes[i]
 	}
+}
+
+for(var i=0; i<15; i++) {
+	ii = irandom(global.level_w)
+	jj = irandom(global.level_h)
+	while scr_cell_get_inst(ii, jj) {
+		ii = irandom(global.level_w)
+		jj = irandom(global.level_h)
+	}
+	inst = instance_create_layer(0, 0, "instances", obj_mob)
+	scr_set_grid_pos(ii, jj, inst)
+	scr_set_pos(ii, jj, inst)
 }
 	
 instance_destroy()	
