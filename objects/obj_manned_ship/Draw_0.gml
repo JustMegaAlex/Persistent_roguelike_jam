@@ -19,4 +19,8 @@ if room = rm_battle {
 		draw_sprite_ext(ui_frame_spr, durability-2, ui_frame_x, ui_frame_y, 1, 1, 0, c_yellow, 1)
 }
 
+if control_state = Control.jump {
+	draw_sprite(spr_pointer, 0, scr_x(jump_i), scr_y(jump_j))
+}
+
 draw_self()

@@ -9,12 +9,20 @@ enum Control {
 	normal,
 	special_action,
 	recombination,
-	dialog
+	dialog,
+	jump
 }
 
 control_state = Control.normal
 //// properties
 fraction = Fraction.human
+
+//// stats
+jump_dist = 4
+jump_horizontal = true
+jump_current_dist = 0
+jump_i = 0
+jump_j = 0
 
 //// equipment
 frame_active = true

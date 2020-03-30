@@ -53,9 +53,43 @@ switch control_state {
 		if energy == energy_capacity {
 			control_state = Control.normal
 			frame_active = true
+			break
 		}
 		scr_control_reset()
 		scr_sys_process_continue()
+	}
+		
+	case Control.jump: {
+		var inp_h = key_right - key_left
+		var inp_v = key_down - key_up
+		
+		if jump_horizontal {
+			if abs(inp_v) { 
+				jump_horizontal = false
+				jump_current_dist =inp_v
+			}
+			jump_current_dist += inp_h
+		}
+		else {
+			if abs(inp_h) { 
+				jump_horizontal = true
+				jump_current_dist = inp_h
+			}
+			jump_current_dist += inp_v
+		}
+		
+		jump_current_dist = min(abs(jump_current_dist), jump_dist)*sign(jump_current_dist)
+		jump_i = i+jump_current_dist*jump_horizontal
+		jump_j = j+jump_current_dist*!jump_horizontal
+		if key_action {
+			if abs(jump_current_dist) and !scr_cell_get_inst(jump_i, jump_j) {
+				scr_swap_cells(i, j, jump_i, jump_j)
+				scr_set_grid_pos(jump_i, jump_j)
+				control_script = scr_anim_jump
+				energy--
+				control_state = Control.normal
+			}
+		}
 	}
 }
 

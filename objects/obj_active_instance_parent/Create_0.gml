@@ -28,6 +28,7 @@ energy_capacity = 5
 energy = energy_capacity
 durability = 50
 frame_active = false
+jump_dist = 0
 
 //// battle vars
 // moving

@@ -13,6 +13,11 @@ if obj_manned_ship.key_action {
 		}
 		case "warp": {
 			scr_start_game("random", instance_find(obj_manned_ship, 0))
+			break
+		}
+		case "jump": {
+			obj_manned_ship.control_state = Control.jump
+			break
 		}
 	}
 	instance_destroy()

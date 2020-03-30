@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "b109f160-ccb3-488f-b1b2-3f16f3e25bb3",
+            "Value": {
+                "id": "51bd8c30-dbd7-47b4-a9a5-5fba23ea4832",
+                "resourcePath": "scripts\\scr_anim_jump\\scr_anim_jump.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b2031ecf-9b8c-4919-bc02-1b9f244ec710",
             "Value": {
                 "id": "3ecc92b2-b0d0-4b48-a960-936d39712a06",
@@ -967,6 +975,14 @@
             }
         },
         {
+            "Key": "f3ab3dbb-ee89-4814-8084-80f090884f30",
+            "Value": {
+                "id": "3557d3f3-ba01-4f6f-ab8f-cbf22cd7d719",
+                "resourcePath": "sprites\\spr_pointer\\spr_pointer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f3f9b2d1-48d4-4020-a0eb-f734a851c5da",
             "Value": {
                 "id": "51139897-bbce-4e7f-b063-d0b1f60bee42",
@@ -1112,6 +1128,7 @@
         "1682b475-aecd-4adf-a633-43eb1a06f5bb",
         "2e46f0b6-2b6a-43db-bd25-73c9bbad54b6",
         "11aa1f41-b729-4dd3-ab0e-fc013839cdc8",
+        "b109f160-ccb3-488f-b1b2-3f16f3e25bb3",
         "1dea5d7d-376f-4af4-bc6a-742a9cb05d50",
         "ab2aeefe-203f-4fe7-a7d9-7c0ac914bcab",
         "b5012f42-f93b-46f4-9d8f-a10fbf83053d",
