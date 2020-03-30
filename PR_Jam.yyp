@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "34223846-7c81-4686-9855-b56c23546914",
+            "Value": {
+                "id": "c16ad9b5-06ff-4174-867a-3bd034abe502",
+                "resourcePath": "scripts\\scr_lab\\scr_lab.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "36359f54-2dd0-48e4-9c8e-3c2afbb2f7fa",
             "Value": {
                 "id": "a067bcbc-07db-4235-8d70-a2852f18d41a",
@@ -559,11 +567,27 @@
             }
         },
         {
+            "Key": "879ac98c-cd99-40ed-9c08-7971039ddb9b",
+            "Value": {
+                "id": "80f79902-97a5-4ec1-a850-3f6cf2759264",
+                "resourcePath": "scripts\\scr_dialog_game_over\\scr_dialog_game_over.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "88a4c54d-cc06-4023-9b26-5bef10010b92",
             "Value": {
                 "id": "81e71be1-5cbe-42bd-9df6-fa3f227f7309",
                 "resourcePath": "sprites\\spr_planet\\spr_planet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c9fda16-1b70-4661-966b-7db00f065751",
+            "Value": {
+                "id": "af21fdcc-d92d-40a3-9ef0-b82e4efa6628",
+                "resourcePath": "scripts\\scr_ui_x\\scr_ui_x.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -739,6 +763,14 @@
             "Value": {
                 "id": "3ecc92b2-b0d0-4b48-a960-936d39712a06",
                 "resourcePath": "scripts\\scr_swap_cells\\scr_swap_cells.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b24f1492-0b61-429e-8047-b6e2a47cca6f",
+            "Value": {
+                "id": "98f1beb5-a425-4afe-a9d7-baddbe768fa6",
+                "resourcePath": "scripts\\scr_ui_y\\scr_ui_y.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1050,7 +1082,7 @@
             "Key": "f993781b-d282-4549-bf99-c0454e5c0ba6",
             "Value": {
                 "id": "b6f30eb9-06ea-47e2-98cf-6e6fef08d2d8",
-                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourcePath": "fonts\\fnt\\fnt.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -1136,10 +1168,14 @@
         "e416696e-1258-4a8a-8948-3a6843b21b45",
         "31797391-49de-477f-8181-b3541cfd5844",
         "0d60385a-6d16-444c-9001-d2cba2651798",
+        "34223846-7c81-4686-9855-b56c23546914",
+        "879ac98c-cd99-40ed-9c08-7971039ddb9b",
         "40930685-a1e7-475a-9229-32ecb9c2a1dd",
         "642f829d-73c7-4070-a130-6b2ee6a13605",
         "6b053802-3494-400a-9baa-073a40fb4d6a",
-        "1393bb2c-47ee-4d1c-8acf-b72eb5ccdb2a"
+        "1393bb2c-47ee-4d1c-8acf-b72eb5ccdb2a",
+        "8c9fda16-1b70-4661-966b-7db00f065751",
+        "b24f1492-0b61-429e-8047-b6e2a47cca6f"
     ],
     "tutorial": ""
 }

@@ -11,7 +11,9 @@ text_y = y + 8
 
 //// choices
 choice_x = text_x
+choice_text_x = choice_x + 8
 choice_y = y + sprite_height - 10
+choice_text_y = choice_y - 3
 space_between_choices = 16
 
 //// dialog tree vars

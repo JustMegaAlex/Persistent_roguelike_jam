@@ -17,7 +17,7 @@ enum Battle {
 }
 
 battle_state = Battle.idle
-b_oponent_dist = 300
+b_oponent_dist = 400
 manuver_dir = 30
 manuver_time = 30
 manuvering = 0

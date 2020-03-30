@@ -5,3 +5,5 @@ for(var i=0; i<actions_num; i++) {
 	draw_sprite(infc_icon, 0, icon_x, icon_y)
 	draw_set_halign(fa_center)
 }
+
+draw_text(obj_manned_ship.x, obj_manned_ship.y - infc_rad - 20, list_actions[| choice])

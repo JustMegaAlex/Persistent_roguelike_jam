@@ -23,28 +23,34 @@ else {
 	//if oponent_dead {
 	//	scr_cell_clear(oponent_world)
 	//}
-	if !oponent_dead {
+	if room == rm_battle {
+		if !oponent_dead {
 		
-		with oponent_world {
-			control_script = scr_mob_control
-			image_angle = 90
-			x = scr_x(i)
-			y = scr_y(j)
-			persistent = false
-			battle_state = Battle.idle
+			with oponent_world {
+				control_script = scr_mob_control
+				image_angle = 90
+				x = scr_x(i)
+				y = scr_y(j)
+				battle_state = Battle.idle
+			}
 		}
-	}
 	
-	if protagonist_dead {
-		scr_cell_clear(obj_manned_ship)
+		if protagonist_dead {
+			scr_cell_clear(obj_manned_ship)
+			scr_dialog_open(scr_dialog_game_over)
+		}
+		else {
+			with obj_manned_ship {
+				control_script = scr_protagonist_control
+				image_angle = 90
+				x = scr_x(i)
+				y = scr_y(j)
+			}
+		}
+		alarm[0] = 1
 	}
 	else {
-		with obj_manned_ship {
-			control_script = scr_protagonist_control
-			image_angle = 90
-			x = scr_x(i)
-			y = scr_y(j)
-		}
+		oponent_world.persistent = false
+		instance_destroy()
 	}
-	instance_destroy()
 }

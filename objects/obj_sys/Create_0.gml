@@ -12,6 +12,8 @@ enum Input {
 
 input_mode = Input.world
 
+draw_set_font(fnt)
+
 //// game_grid
 global.level_w = 15
 global.level_h = 10
@@ -49,3 +51,6 @@ if testing_sector {
 else {
 	scr_start_game("random", noone)
 }
+
+//// late init 
+alarm[0] = 2

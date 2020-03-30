@@ -30,6 +30,8 @@ eq_weapon = scr_eq_get_instance(obj_equipment.wp_crusher)
 eq_phase = scr_eq_get_instance(obj_equipment.ph_basic)
 
 //// ui 
+scr_camera_set_center(0, x, y)
+
 ui_enrg_bar = spr_ui_enrg_middle
 ui_enrg_tail = spr_ui_enrg_tail
 ui_enrg_cell = spr_ui_enrg_cell
