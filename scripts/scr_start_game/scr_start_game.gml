@@ -3,8 +3,10 @@
 
 instance_create_layer(0, 0, "Sys", obj_sector_gen)
 
-if argument1 
+if argument1 {
 	scr_control_reset(argument1)
+	argument1.control_state = Control.normal
+}
 
 scr_sys_process_continue()
 		
