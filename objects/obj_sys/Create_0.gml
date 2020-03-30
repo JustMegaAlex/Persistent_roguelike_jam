@@ -1,5 +1,5 @@
 //////////init gameplay
-testing_sector = true
+testing_sector = false
 
 //// ui
 // window_set_fullscreen(true)
