@@ -10,7 +10,7 @@ text_x = x + x_indent * 0.5
 text_y = y + 8
 
 //// choices
-choice_x = text_x
+choice_x = text_x + 4
 choice_text_x = choice_x + 8
 choice_y = y + sprite_height - 10
 choice_text_y = choice_y - 3

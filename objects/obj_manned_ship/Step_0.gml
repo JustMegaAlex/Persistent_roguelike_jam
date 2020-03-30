@@ -1,7 +1,9 @@
 
 event_inherited()
 
-scr_camera_set_center(0, x, y)
+var cam_displ = 100 * (room == rm_battle)
+
+scr_camera_set_center(0, x, y - cam_displ)
 
 //// energy bar
 ui_enrg_y = scr_camy(0) + ui_energy_rel_y
@@ -20,3 +22,6 @@ ui_usable_y = scr_camy(0) + ui_usable_rel_y
 //// frame
 ui_frame_x = ui_enrg_left_tail_x + ui_frame_rel_x
 ui_frame_y = scr_camy(0) + ui_frame_rel_y
+
+ui_dur_x = ui_enrg_left_tail_x + ui_dur_rel_x
+ui_dur_y = scr_camy(0) + ui_dur_rel_y

@@ -26,7 +26,8 @@ eq_phase = noone
 //// stats
 energy_capacity = 5
 energy = energy_capacity
-durability = 50
+durability_max = 50
+durability = durability_max
 frame_active = false
 jump_dist = 0
 

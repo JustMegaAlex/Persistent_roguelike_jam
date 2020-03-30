@@ -12,6 +12,7 @@ if obj_manned_ship.key_action {
 			break
 		}
 		case "warp": {
+			scr_spend_energy(2, obj_manned_ship)
 			scr_start_game("random", instance_find(obj_manned_ship, 0))
 			break
 		}

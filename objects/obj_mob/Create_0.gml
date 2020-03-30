@@ -22,3 +22,6 @@ manuver_dir = 30
 manuver_time = 30
 manuvering = 0
 dir = 270
+
+
+durability = 1

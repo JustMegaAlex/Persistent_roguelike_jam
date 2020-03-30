@@ -1,4 +1,4 @@
-test = 1
+
 if dialog_start {
 	start = ["I'm listening",
 		["Give up", "threat"],

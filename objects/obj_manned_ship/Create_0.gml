@@ -57,3 +57,27 @@ ui_frame_rel_x = obj_ui_frame_mockup.x - obj_ui_enrg_mockup.x
 ui_frame_rel_y = obj_ui_frame_mockup.y - scr_camy(0)
 ui_frame_x = ui_enrg_left_tail_x + ui_frame_rel_x
 ui_frame_y = scr_camy(0) + ui_frame_rel_y
+
+ui_dur_spr = spr_ship_carger_durab
+ui_dur_scale_spr = spr_ship_carger_durab_scale
+ui_dur_rel_x = obj_ui_durab_mockup.x - obj_ui_enrg_mockup.x
+ui_dur_rel_y = obj_ui_durab_mockup.y - scr_camy(0)
+ui_dur_x = ui_enrg_left_tail_x + ui_dur_rel_x
+ui_dur_y = scr_camy(0) + ui_dur_rel_y
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

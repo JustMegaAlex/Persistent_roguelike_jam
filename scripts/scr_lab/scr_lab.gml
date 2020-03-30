@@ -1,4 +1,4 @@
-test = 1
+
 if dialog_start {
 	start = ["Finally! I got my space labship up and running",
 		["Press Z to next", "mix1"]]
@@ -15,11 +15,13 @@ if dialog_start {
 	tip2 = ["Use arrows to navigate the labship.",
 		["...", "tip3"]]
 	tip3 = ["If you move into an akien ship you will attack it.",
-		["Yep", "tip4"]]
+		["Yep", "tip6"]]
+	tip6 = ["While in battle: Z to shoot, E - retreat",
+		["Awesome", "tip4"]]
 	tip4 = ["You also can use some special abilities by pressing Q button",
 		["Got it", "tip5"]]
 	tip5 = ["Go ahead test them yourself",
-		["Thnaks, dude!", false]]
+		["Thanks, dude!", false]]
 		
 	choices = start
 	dialog_start = false

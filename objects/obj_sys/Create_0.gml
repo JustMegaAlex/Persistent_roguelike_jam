@@ -54,3 +54,5 @@ else {
 
 //// late init 
 alarm[0] = 2
+
+first_blood = true
