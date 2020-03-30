@@ -1,34 +1,24 @@
 {
-    "id": "cbc7c418-3fac-4c10-9ee1-072868ddb986",
+    "id": "0a83e188-a29e-4321-8b40-7c3401ebe5b4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_ui_mockup_prent",
+    "name": "obj_planet",
     "eventList": [
         {
-            "id": "0047b218-ff8c-47c7-a28a-1f280fe7fbde",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "cbc7c418-3fac-4c10-9ee1-072868ddb986"
-        },
-        {
-            "id": "9daeb08e-dde4-4b09-a389-2368ff18f45b",
+            "id": "1f6e13c1-86b0-40d9-88e1-2043784026fb",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "cbc7c418-3fac-4c10-9ee1-072868ddb986"
+            "m_owner": "0a83e188-a29e-4321-8b40-7c3401ebe5b4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "parentObjectId": "bb6339e3-beae-4415-8ef6-001b4bf56123",
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "88a4c54d-cc06-4023-9b26-5bef10010b92",
     "visible": true
 }

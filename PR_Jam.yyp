@@ -55,11 +55,27 @@
             }
         },
         {
+            "Key": "0a83e188-a29e-4321-8b40-7c3401ebe5b4",
+            "Value": {
+                "id": "b75ca5ff-5260-4c18-b6b3-c91618a11a77",
+                "resourcePath": "objects\\obj_planet\\obj_planet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d60385a-6d16-444c-9001-d2cba2651798",
             "Value": {
                 "id": "c72cf0e8-f1e7-4e6b-b426-0f7910663f33",
                 "resourcePath": "scripts\\scr_dialog\\scr_dialog.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0ddcc94c-6567-464d-a5fb-4784eb2affbc",
+            "Value": {
+                "id": "20208bec-66a2-4561-87e0-6739602d6813",
+                "resourcePath": "sprites\\ships_draft\\ships_draft.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -295,14 +311,6 @@
             }
         },
         {
-            "Key": "6181b905-ea6d-47dd-87b6-9046859f61cd",
-            "Value": {
-                "id": "11ef785c-549e-4881-a735-a47c79de3983",
-                "resourcePath": "sprites\\ships_draft\\ships_draft.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "6247c531-0dbf-4596-8a95-0a5df79cd746",
             "Value": {
                 "id": "b4386f1f-cdbc-415f-8adf-a365a80f8c68",
@@ -500,6 +508,14 @@
                 "id": "8413bcba-c989-40c0-9557-1efd23bc9fd2",
                 "resourcePath": "scripts\\scr_init_inst_on_grid\\scr_init_inst_on_grid.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "88a4c54d-cc06-4023-9b26-5bef10010b92",
+            "Value": {
+                "id": "81e71be1-5cbe-42bd-9df6-fa3f227f7309",
+                "resourcePath": "sprites\\spr_planet\\spr_planet.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
