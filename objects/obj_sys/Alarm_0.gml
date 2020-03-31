@@ -1,2 +1,2 @@
 
-scr_dialog_open(scr_lab)
+scr_dialog_open(scr_dialog_welcome)

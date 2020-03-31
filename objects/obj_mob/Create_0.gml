@@ -24,4 +24,4 @@ manuvering = 0
 dir = 270
 
 
-durability = 1
+durability = 40
