@@ -52,8 +52,6 @@ else {
 	else {
 		if instance_exists(oponent_world)
 			oponent_world.persistent = false
-		if obj_sys.first_blood
-			scr_dialog_open(scr_mix_them)
 		instance_destroy()
 	}
 }
