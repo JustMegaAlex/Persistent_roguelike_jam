@@ -32,7 +32,7 @@ switch control_state {
 					return
 				}
 			}
-			if scr_try_move(delta_i, delta_j) {
+			if scr_try_move_rel(delta_i, delta_j) {
 				control_script = scr_move
 				alarm[0] = turn_delay
 			}

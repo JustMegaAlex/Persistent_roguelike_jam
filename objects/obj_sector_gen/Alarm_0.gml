@@ -39,27 +39,23 @@ if sector_type == "random" {
 			
 			switch area_type {
 				case "star": {
-					inst = instance_create_layer(0, 0, "instances", obj_star)
 					ii = area_i + irandom(col_sizes[i] - inst.size_in_universe)
 					jj = area_j + irandom(row_sizes[i] - inst.size_in_universe)
-					scr_set_grid_pos(ii, jj, inst)
-					scr_set_pos(ii, jj, inst)
+					scr_try_create(ii, jj, obj_star)
 					break
 				}
 				case "planet": {
-					inst = instance_create_layer(0, 0, "instances", obj_planet)
 					ii = area_i + irandom(col_sizes[i] - inst.size_in_universe)
 					jj = area_j + irandom(row_sizes[i] - inst.size_in_universe)
-					scr_set_grid_pos(ii, jj, inst)
-					scr_set_pos(ii, jj, inst)
+					scr_try_create(ii, jj, obj_planet)
 					break
 				}
 				case "aster": {
-					num = floor(col_sizes[i]*row_sizes[j]*(0.4 + random(0.3)))
+					num = floor(col_sizes[i]*row_sizes[j]*(0.3 + random(0.2)))
 					repeat num {
-						scr_set_grid_pos_region(area_i, area_j,
-												area_i + col_sizes[i],
-												area_j + col_sizes[j],
+						scr_set_grid_pos_in_region(area_i, area_j,
+												area_i + col_sizes[i]-1,
+												area_j + col_sizes[j]-1,
 												obj_asteroid)
 					}
 					break
@@ -67,17 +63,17 @@ if sector_type == "random" {
 				case "empty": {
 					////
 					if !protagonist_inst {
-						 protagonist_inst = scr_set_grid_pos_region(area_i, area_j,
-												area_i + col_sizes[i],
-												area_j + col_sizes[j],
+						 protagonist_inst = scr_set_grid_pos_in_region(area_i, area_j,
+												area_i + col_sizes[i]-1,
+												area_j + col_sizes[j]-1,
 												obj_manned_ship)
 					}
 					
 					num = floor(col_sizes[i]*row_sizes[j]*(0.1 + random(0.1)))
 					repeat num {
-						scr_set_grid_pos_region(area_i, area_j,
-												area_i + col_sizes[i],
-												area_j + col_sizes[j],
+						scr_set_grid_pos_in_region(area_i, area_j,
+												area_i + col_sizes[i]-1,
+												area_j + col_sizes[j]-1,
 												obj_asteroid)
 					}
 					break
@@ -90,7 +86,7 @@ if sector_type == "random" {
 }
 
 for(var i=0; i<15; i++) {
-	scr_set_grid_pos_region(0, 0, global.level_w, global.level_h, obj_mob)
+	scr_set_grid_pos_in_region(0, 0, global.level_w-1, global.level_h-1, obj_mob)
 }
 	
 instance_destroy()	
