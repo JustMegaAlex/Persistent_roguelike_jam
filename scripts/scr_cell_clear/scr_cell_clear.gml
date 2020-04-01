@@ -6,7 +6,7 @@ var size = 1
 if argument_count == 1 {
 	var target_i = argument[0].i
 	var target_j = argument[0].j
-	var size = inst.size_in_universe
+	var size = argument[0].size_in_universe
 }
 else {
 	var target_i = argument[0]

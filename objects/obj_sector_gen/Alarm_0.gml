@@ -39,14 +39,14 @@ if sector_type == "random" {
 			
 			switch area_type {
 				case "star": {
-					ii = area_i + irandom(col_sizes[i] - inst.size_in_universe)
-					jj = area_j + irandom(row_sizes[i] - inst.size_in_universe)
+					ii = area_i + irandom(col_sizes[i])
+					jj = area_j + irandom(row_sizes[i])
 					scr_try_create(ii, jj, obj_star)
 					break
 				}
 				case "planet": {
-					ii = area_i + irandom(col_sizes[i] - inst.size_in_universe)
-					jj = area_j + irandom(row_sizes[i] - inst.size_in_universe)
+					ii = area_i + irandom(col_sizes[i])
+					jj = area_j + irandom(row_sizes[i])
 					scr_try_create(ii, jj, obj_planet)
 					break
 				}

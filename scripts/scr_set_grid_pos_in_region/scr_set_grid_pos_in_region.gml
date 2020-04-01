@@ -36,7 +36,7 @@ if object_exists(inst) {
 repeat attempts {
 	ii = i0 + irandom(i1 - i0)
 	jj = j0 + irandom(j1 - j0)
-	if scr_try_move(ii, jj, inst)
+	if scr_try_place(ii, jj, inst)
 		return true
 }
 

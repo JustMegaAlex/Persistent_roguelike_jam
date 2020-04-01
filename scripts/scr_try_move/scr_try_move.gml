@@ -24,7 +24,5 @@ for(var ii=0; ii<size; ii++)
 scr_cell_clear(inst)
 // set grid cells' values
 scr_set_grid_pos(target_i, target_j, inst)
-// set instance's position
-scr_set_pos(target_i, target_j, inst)
 
 return true
