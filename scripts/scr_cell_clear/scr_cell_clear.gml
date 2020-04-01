@@ -7,4 +7,4 @@ if argument_count == 1 {
 	return
 }
 
-global.grid[# argument[0], argument[1]] = 0
+scr_set_cell(argument[0], argument[1], 0 )

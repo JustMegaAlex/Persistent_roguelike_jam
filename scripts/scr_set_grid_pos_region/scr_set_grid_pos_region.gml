@@ -37,7 +37,7 @@ repeat attempts {
 	// check all cells we are going to occupy
 	for(var i=0; i<inst.size_in_universe; i++) 
 		for(var j=0; j<inst.size_in_universe; j++)
-			if scr_cell_get_inst(ii+i, jj+j) {
+			if scr_get_cell(ii+i, jj+j) {
 				free = false
 				i = inst.size_in_universe	// quit external for loop
 				break

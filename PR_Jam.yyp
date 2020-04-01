@@ -42,7 +42,7 @@
             "Key": "01c0121a-6a37-4fa3-adfb-71a4bde6ecff",
             "Value": {
                 "id": "918e6529-ddcb-46c4-a8d4-431c04fd955d",
-                "resourcePath": "scripts\\scr_cell_get_inst\\scr_cell_get_inst.yy",
+                "resourcePath": "scripts\\scr_get_cell\\scr_get_cell.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -138,7 +138,7 @@
             "Key": "1abb8515-e1d5-451f-9c9e-d18a32656579",
             "Value": {
                 "id": "a9aea3bb-9ff9-4b09-ab71-766b37583b01",
-                "resourcePath": "scripts\\scr_set_sell\\scr_set_sell.yy",
+                "resourcePath": "scripts\\scr_set_cell\\scr_set_cell.yy",
                 "resourceType": "GMScript"
             }
         },

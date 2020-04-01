@@ -5,6 +5,6 @@
 ///@arg j2
 
 var buf
-buf = global.grid[# argument0, argument1]
-global.grid[# argument0, argument1] = global.grid[# argument2, argument3]
-global.grid[# argument2, argument3] = buf
+buf = scr_get_cell(argument0, argument1)
+scr_set_cell(argument0, argument1, scr_get_cell(argument2, argument3))
+scr_set_cell(argument2, argument3, buf)

@@ -12,7 +12,7 @@ enum Input {
 
 input_mode = Input.world
 
-//draw_set_font(fnt)
+draw_set_font(fnt)
 
 //// game_grid
 global.level_w = 15

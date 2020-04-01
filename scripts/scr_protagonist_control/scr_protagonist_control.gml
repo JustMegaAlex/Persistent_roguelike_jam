@@ -25,7 +25,7 @@ switch control_state {
 			input_dir--
 			var delta_i = lengthdir_x(1, input_dir*90)
 			var delta_j = lengthdir_y(1, input_dir*90)
-			var inst = scr_cell_get_inst(i+delta_i, j+ delta_j)
+			var inst = scr_get_cell(i+delta_i, j+ delta_j)
 			if inst {
 				if inst.object_index == obj_mob {
 					scr_start_battle(inst)
@@ -82,7 +82,7 @@ switch control_state {
 		jump_i = i+jump_current_dist*jump_horizontal
 		jump_j = j+jump_current_dist*!jump_horizontal
 		if key_action {
-			if abs(jump_current_dist) and !scr_cell_get_inst(jump_i, jump_j) {
+			if abs(jump_current_dist) and !scr_get_cell(jump_i, jump_j) {
 				scr_swap_cells(i, j, jump_i, jump_j)
 				scr_set_grid_pos(jump_i, jump_j)
 				control_script = scr_anim_jump
