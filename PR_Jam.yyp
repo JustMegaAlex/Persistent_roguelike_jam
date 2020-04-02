@@ -130,7 +130,7 @@
             "Key": "16689e8c-5baf-4594-932a-a1b1097f298d",
             "Value": {
                 "id": "aa452474-06aa-4cb3-a05e-a6f627899ecc",
-                "resourcePath": "objects\\obj_weapon\\obj_weapon.yy",
+                "resourcePath": "objects\\obj_parent_weapon\\obj_parent_weapon.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -340,6 +340,14 @@
                 "id": "dba87542-c1c9-474e-9eed-6c38eb0e9fa3",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4f63ab68-e47a-43cb-8645-871903329c5a",
+            "Value": {
+                "id": "1e53104e-36f8-4a44-815e-d5300529de13",
+                "resourcePath": "views\\4f63ab68-e47a-43cb-8645-871903329c5a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -575,6 +583,14 @@
             }
         },
         {
+            "Key": "7e9376c7-bcd9-4ff9-b9dc-4cf46cf3097c",
+            "Value": {
+                "id": "78812dcf-8ba0-4f21-9d78-d7c35d46289b",
+                "resourcePath": "objects\\obj_parent_projectile\\obj_parent_projectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7f2d1ce9-ed6f-4769-ab80-d5f70c458821",
             "Value": {
                 "id": "6d1637cc-eac8-4f66-b2dc-f5e59d074a71",
@@ -772,6 +788,14 @@
                 "id": "1a671375-e0a4-46cc-b4e5-c5745105f842",
                 "resourcePath": "sprites\\spr_ship_carger_durab_scale\\spr_ship_carger_durab_scale.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a44f451f-5ec0-4c50-b70b-88909b9a954d",
+            "Value": {
+                "id": "bc2c0b85-d629-4b31-a2aa-ef06edfb2880",
+                "resourcePath": "objects\\obj_proj_crusher\\obj_proj_crusher.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1215,14 +1239,6 @@
             }
         },
         {
-            "Key": "fd4eba22-c85f-4919-9788-1a9fa91b7f35",
-            "Value": {
-                "id": "f07fb7ee-dd20-40a7-b285-2d0b3a77223f",
-                "resourcePath": "objects\\obj_equipment\\obj_equipment.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "fe1c9b31-6404-40d4-a012-6f545f87350b",
             "Value": {
                 "id": "cdfc5341-8fd2-42af-bda6-d3b0dfeddc02",
@@ -1236,6 +1252,14 @@
                 "id": "7341b056-2a96-41d3-8d1b-35c0b13e091e",
                 "resourcePath": "views\\fec72ac7-8e2b-4003-b73c-803bde89efc2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ff329f15-9b48-4599-9b64-7220db3ad891",
+            "Value": {
+                "id": "23b95518-d493-42cc-bed1-3b8165cdc2d8",
+                "resourcePath": "objects\\obj_weap_crusher\\obj_weap_crusher.yy",
+                "resourceType": "GMObject"
             }
         },
         {

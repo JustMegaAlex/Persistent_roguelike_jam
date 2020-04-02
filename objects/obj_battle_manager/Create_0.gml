@@ -8,6 +8,5 @@ oponent_world = noone
 
 // to battle
 rm_return_to = room
-room_goto(rm_battle)
 
 alarm[0] = 1

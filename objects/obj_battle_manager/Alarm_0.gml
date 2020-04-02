@@ -21,6 +21,22 @@ else {
 	// room is switched in scr_end_battle()
 	
 	if room == rm_battle {
+		if instance_exists(obj_parent_projectile)
+			instance_destroy(obj_parent_projectile)
+		alarm[0] = 1
+	}
+	else {
+		// in world room
+		if protagonist_dead {
+			scr_dialog_open(scr_dialog_game_over)
+		}
+		else with obj_manned_ship {
+				control_script = scr_protagonist_control
+				image_angle = 90
+				x = scr_x(i)
+				y = scr_y(j)
+			}
+		
 		if !oponent_dead {
 			with oponent_world {
 				control_script = scr_mob_control
@@ -29,23 +45,12 @@ else {
 				y = scr_y(j)
 				battle_state = Battle.idle
 				persistent = false
+				
+				if instance_exists(eq_weapon)
+					eq_weapon.persistent = true
+				if instance_exists(eq_phase)
+					eq_phase.persistent = true
 			}
-		}
-	
-		else {
-			with obj_manned_ship {
-				control_script = scr_protagonist_control
-				image_angle = 90
-				x = scr_x(i)
-				y = scr_y(j)
-			}
-		}
-		alarm[0] = 1
-	}
-	else {
-		// in world room
-		if protagonist_dead {
-			scr_dialog_open(scr_dialog_game_over)
 		}
 		instance_destroy()
 	}

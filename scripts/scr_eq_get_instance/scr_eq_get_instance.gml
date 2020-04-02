@@ -1,13 +1,17 @@
 ///@arg eq_inst
+///@arg *host_inst
+var host = id
+if argument_count == 2
+	host = argument[1]
+
 var eq_inst = argument0
-with eq_inst { temp_copy = instance_copy(false) }
+eq_inst = instance_create_layer(0, 0, "Instances", eq_inst)
+eq_inst.host = host
 
-eq_inst.temp_copy.host = id
+//// set equipment persistent for protagonist
 
-if eq_inst.object_index == obj_weapon
-	if id.object_index != obj_manned_ship {
-		eq_inst.temp_copy.sp *= -1
-		eq_inst.temp_copy.image_angle = 270
-	}
+if host.object_index == obj_manned_ship {
+	eq_inst.persistent = true
+}
 
-return eq_inst.temp_copy
+return eq_inst
