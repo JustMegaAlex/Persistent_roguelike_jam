@@ -90,5 +90,8 @@ switch control_state {
 				control_state = Control.normal
 			}
 		}
+		
+		if key_open_actions
+			control_state = Control.normal
 	}
 }

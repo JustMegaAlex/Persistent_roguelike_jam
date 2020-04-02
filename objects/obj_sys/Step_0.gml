@@ -2,11 +2,13 @@
 
 if input_mode == Input.world and !process_busy {
 	inst_current = instance_find(obj_active_instance_parent, inst_index)
-	with inst_current {
-		event_perform(ev_other, ev_user0)	
+	if inst_current.control_script == scr_stub {
+		with inst_current {
+			event_perform(ev_other, ev_user0)	
+		}
+		inst_index++
+		process_busy = true
 	}
-	inst_index++
-	process_busy = true
 }
 if inst_index == instance_number(obj_active_instance_parent)
 	inst_index = 0

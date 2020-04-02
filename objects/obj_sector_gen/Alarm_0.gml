@@ -86,7 +86,7 @@ if sector_type == "random" {
 	}
 }
 
-for(var i=0; i<15; i++) {
+for(var i=0; i<mobs_num; i++) {
 	scr_set_grid_pos_in_region(0, 0, global.level_w-1, global.level_h-1, obj_mob)
 }
 	
