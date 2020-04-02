@@ -13,6 +13,7 @@ else {
 	var target_j = argument[1]
 }
 
+
 // clear current grid placement region
 for(var ii=0; ii<size; ii++) 
 	for(var jj=0; jj<size; jj++)

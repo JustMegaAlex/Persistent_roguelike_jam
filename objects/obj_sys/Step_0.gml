@@ -11,7 +11,7 @@ if input_mode == Input.world and !process_busy {
 if inst_index == instance_number(obj_active_instance_parent)
 	inst_index = 0
 
-if keyboard_check_pressed(vk_tab)
+if keyboard_check_pressed(vk_tab) and debug_on
 	debug_show = !debug_show
 	
 if keyboard_check_pressed(vk_escape)
