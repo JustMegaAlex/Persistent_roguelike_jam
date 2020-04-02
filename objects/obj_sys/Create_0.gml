@@ -46,14 +46,21 @@ enum Fraction {
 	archon
 }
 
+global.sizes = ds_map_create()
+global.sizes[? obj_star] = 4
+global.sizes[? obj_planet] = 3
+global.sizes[? obj_active_instance_parent] = 1
+global.sizes[? obj_asteroid] = 1
+
 if testing_sector {
 	room_goto(rm_testing)
+	//// do grid init in rm_testing
 }
 else {
 	scr_start_game("random", noone)
 }
 
-//// late init 
+//// late init
 alarm[0] = 2
 
 first_blood = true
