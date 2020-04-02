@@ -32,9 +32,6 @@ else {
 			}
 		}
 	
-		if protagonist_dead {
-			scr_dialog_open(scr_dialog_game_over)
-		}
 		else {
 			with obj_manned_ship {
 				control_script = scr_protagonist_control
@@ -46,6 +43,10 @@ else {
 		alarm[0] = 1
 	}
 	else {
+		// in world room
+		if protagonist_dead {
+			scr_dialog_open(scr_dialog_game_over)
+		}
 		instance_destroy()
 	}
 }
