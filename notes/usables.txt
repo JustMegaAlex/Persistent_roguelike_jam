@@ -1,0 +1,10 @@
+
+Usables' posssible effects of which they can be combined:
+> universal container (e. g. for antimatter)
+> make dmg in battle
+> make dmg in world
+> scavenge in battle
+> open exit in battle
+> stealth in synchrozone
+> reveal synchrozone
+> utilize star energy
