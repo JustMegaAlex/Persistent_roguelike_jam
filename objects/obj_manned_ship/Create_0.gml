@@ -30,6 +30,7 @@ eq_weapon = scr_eq_get_instance(obj_equipment.wp_crusher)
 eq_phase = scr_eq_get_instance(obj_equipment.ph_basic)
 
 //// ui 
+battle_cam_y = -30
 scr_camera_set_center(0, x, y)
 
 ui_enrg_bar = spr_ui_enrg_middle
@@ -64,8 +65,6 @@ ui_dur_rel_x = obj_ui_durab_mockup.x - obj_ui_enrg_mockup.x
 ui_dur_rel_y = obj_ui_durab_mockup.y - scr_camy(0)
 ui_dur_x = ui_enrg_left_tail_x + ui_dur_rel_x
 ui_dur_y = scr_camy(0) + ui_dur_rel_y
-	
-	
 	
 	
 	

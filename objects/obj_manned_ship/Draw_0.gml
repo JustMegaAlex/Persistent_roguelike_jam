@@ -11,13 +11,7 @@ if room = rm_battle {
 	draw_sprite(eq_weapon.ui_left_tail, 0, ui_wp_left_tail_x, ui_wp_bar_y)
 	for(var i=0; i<eq_weapon.charge; i++)
 		draw_sprite(eq_weapon.ui_cell, 0, ui_wp_bar_x+i*ui_wp_cell_size, ui_wp_bar_y)
-		
-	//draw_sprite(eq_phase.ui_spr, 0, ui_usable_x, ui_usable_y)
 	
-	//draw_sprite_ext(ui_frame_spr, durability-1, ui_frame_x, ui_frame_y, 1, 1, 0, c_red, 1)
-	//if durability > 1
-	//	draw_sprite_ext(ui_frame_spr, durability-2, ui_frame_x, ui_frame_y, 1, 1, 0, c_yellow, 1)
-		
 	draw_sprite(ui_dur_spr, 0, ui_dur_x, ui_dur_y)
 	var h = sprite_get_height(ui_dur_scale_spr)
 	var w = sprite_get_width(ui_dur_scale_spr)

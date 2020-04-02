@@ -92,4 +92,3 @@ switch control_state {
 		}
 	}
 }
-

@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "4f9aecfa-2795-49b6-b0ea-b5e57270a295",
+            "Value": {
+                "id": "85d9dc51-bc4d-4190-986a-5d705b648d38",
+                "resourcePath": "scripts\\scr_battlecam_set_center\\scr_battlecam_set_center.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "51d4a98e-a7b0-4b54-8764-b6a69c4632f5",
             "Value": {
                 "id": "468369c6-146b-4c36-a57c-701071c8cfd4",
@@ -1190,6 +1198,7 @@
         "740d19c8-57c5-4319-86bc-421c067724cd",
         "8787ab6f-84a0-4476-9559-ac3db54061c3",
         "aa350e70-a95f-4264-95c2-b51a921eda8e",
+        "4f9aecfa-2795-49b6-b0ea-b5e57270a295",
         "fc670f2b-ea25-4a55-8edd-7ab5ea6fb2a3",
         "e29991bc-a90c-465b-b65d-0c4c92f8c879",
         "36359f54-2dd0-48e4-9c8e-3c2afbb2f7fa",
