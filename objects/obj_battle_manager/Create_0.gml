@@ -3,7 +3,7 @@ battle_end = false
 protagonist_dead = false
 oponent_dead = false
 
-// inst to fight
+// inst to fight set in scr_start_battle()
 oponent_world = noone
 
 // to battle
