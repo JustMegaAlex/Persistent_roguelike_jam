@@ -13,3 +13,6 @@ if inst_index == instance_number(obj_active_instance_parent)
 
 if keyboard_check_pressed(vk_tab)
 	debug_show = !debug_show
+	
+if keyboard_check_pressed(vk_escape)
+	game_end()
