@@ -5,4 +5,4 @@ protagonist_inst = noone
 // sector generate
 alarm[0] = 1
 
-mobs_num = 0
+mobs_num = 10

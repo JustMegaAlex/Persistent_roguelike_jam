@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "5ba3ca13-cb26-42b5-ad24-bf12a9fc34c5",
+            "Value": {
+                "id": "11799ad7-673b-4194-840d-a25e8b3b77a1",
+                "resourcePath": "sprites\\spr_swarm_rocket\\spr_swarm_rocket.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "60c4dc6c-da7a-4631-a3ae-3bc576c57ed6",
             "Value": {
                 "id": "dd13957a-8944-4bc9-a6d8-a6aac887dda4",
