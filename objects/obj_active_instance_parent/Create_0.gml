@@ -1,6 +1,8 @@
 
 event_inherited()
 
+ds_list_add(global.queue, id)
+
 //// orient sprite vertically
 image_angle = 90
 

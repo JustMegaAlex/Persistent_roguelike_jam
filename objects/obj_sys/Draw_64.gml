@@ -10,3 +10,9 @@ else
 	scr_debug_show_var("curr instance", "bubble destryed")
 
 scr_debug_show_var("process busy", process_busy)
+
+var list = ""
+for(var i=0; i<ds_list_size(global.queue); i++)
+	list += string(global.queue[| i] mod 10000) + ", "
+
+scr_debug_show_var("queue", list)

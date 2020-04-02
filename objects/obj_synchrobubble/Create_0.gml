@@ -1,4 +1,6 @@
 
+event_inherited()
+
 i = scr_i(x)
 j = scr_j(y)
 

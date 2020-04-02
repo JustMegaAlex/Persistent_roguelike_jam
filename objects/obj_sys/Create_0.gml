@@ -21,8 +21,11 @@ global.grid_size = 16
 global.grid = ds_grid_create(global.level_w, global.level_h)
 global.grid_special = ds_grid_create(global.level_w, global.level_h)
 
+//// instances queue list
+global.queue = ds_list_create()
+
 process_busy = false
-inst_index = 0
+queue_pos = 0
 inst_current = noone
 
 //// ui interacting
