@@ -1,5 +1,5 @@
 
-scr_cell_clear(id)
+event_inherited()
 
 if instance_exists(eq_weapon)
 	instance_destroy(eq_weapon)
