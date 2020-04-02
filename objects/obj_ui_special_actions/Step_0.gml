@@ -20,6 +20,12 @@ if obj_manned_ship.key_action {
 			obj_manned_ship.control_state = Control.jump
 			break
 		}
+		case "synchrobubble": {
+			instance_create_layer(scr_x(obj_manned_ship.i), scr_y(obj_manned_ship.j), "Instances", obj_synchrobubble)
+			scr_control_reset(obj_manned_ship)
+			scr_sys_process_continue()
+			obj_manned_ship.control_state = Control.normal
+		}
 	}
 	instance_destroy()
 }

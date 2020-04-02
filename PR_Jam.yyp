@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "4819ca37-e9b0-4cef-a6cf-8c85710d8857",
+            "Value": {
+                "id": "4d59ce9c-19a3-4c80-ad4c-ea3b277021f8",
+                "resourcePath": "scripts\\scr_control_synchrobubble\\scr_control_synchrobubble.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "488649f9-dece-4816-b184-617130fd7a45",
             "Value": {
                 "id": "1cec8b05-f930-40d8-9aab-586369173650",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "81599400-a834-445a-ba65-b021a92b244d",
+            "Value": {
+                "id": "b8ab3e93-9288-421f-a32f-2bbe48be9419",
+                "resourcePath": "views\\81599400-a834-445a-ba65-b021a92b244d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8314def7-0389-4452-a29b-66e03a9bf233",
             "Value": {
                 "id": "314d9bb1-4b96-4db2-99af-fad57ae1b866",
@@ -732,6 +748,14 @@
                 "id": "c098df69-2968-4293-9808-eeee140b2176",
                 "resourcePath": "scripts\\scr_j\\scr_j.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a05691d0-89a2-498c-a475-25b6c2b02373",
+            "Value": {
+                "id": "eebaf2a4-ab03-4a03-8eb8-158ce2fa21a1",
+                "resourcePath": "objects\\obj_synchrobubble\\obj_synchrobubble.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -991,6 +1015,14 @@
             }
         },
         {
+            "Key": "dddabca2-00e1-4123-b200-1bae56f407f1",
+            "Value": {
+                "id": "63a5a911-87e1-43f8-93b7-8e79cb37cf7b",
+                "resourcePath": "objects\\obj_parent_special\\obj_parent_special.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e19c1cf5-5937-47f3-8fb0-9850653f5287",
             "Value": {
                 "id": "2aca7b10-1123-4af4-a0d2-47a022ddeef0",
@@ -1244,6 +1276,7 @@
         "2e46f0b6-2b6a-43db-bd25-73c9bbad54b6",
         "11aa1f41-b729-4dd3-ab0e-fc013839cdc8",
         "b109f160-ccb3-488f-b1b2-3f16f3e25bb3",
+        "4819ca37-e9b0-4cef-a6cf-8c85710d8857",
         "1dea5d7d-376f-4af4-bc6a-742a9cb05d50",
         "ab2aeefe-203f-4fe7-a7d9-7c0ac914bcab",
         "b5012f42-f93b-46f4-9d8f-a10fbf83053d",

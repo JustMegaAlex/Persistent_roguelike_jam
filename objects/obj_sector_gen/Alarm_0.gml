@@ -28,6 +28,7 @@ if sector_type == "random" {
 	
 	// resize grid
 	ds_grid_resize(global.grid, global.level_w, global.level_h)
+	ds_grid_resize(global.grid_special, global.level_w, global.level_h)
 	
 	area_i = 0
 	pos = 0

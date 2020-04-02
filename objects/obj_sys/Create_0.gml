@@ -19,6 +19,7 @@ global.level_w = 15
 global.level_h = 10
 global.grid_size = 16
 global.grid = ds_grid_create(global.level_w, global.level_h)
+global.grid_special = ds_grid_create(global.level_w, global.level_h)
 
 process_busy = false
 inst_index = 0
