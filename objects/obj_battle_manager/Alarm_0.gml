@@ -18,20 +18,17 @@ if !battle_end {
 }
 else {
 	//// end battle
+	// room is switched in scr_end_battle()
 	
-	
-	//if oponent_dead {
-	//	scr_cell_clear(oponent_world)
-	//}
 	if room == rm_battle {
 		if !oponent_dead {
-		
 			with oponent_world {
 				control_script = scr_mob_control
 				image_angle = 90
 				x = scr_x(i)
 				y = scr_y(j)
 				battle_state = Battle.idle
+				persistent = false
 			}
 		}
 	
@@ -50,8 +47,6 @@ else {
 		alarm[0] = 1
 	}
 	else {
-		if instance_exists(oponent_world)
-			oponent_world.persistent = false
 		instance_destroy()
 	}
 }
