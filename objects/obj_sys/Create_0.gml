@@ -36,8 +36,6 @@ display_set_gui_size(window_get_width(), window_get_height())
 
 scr_debug_INI()
 
-debug_show = false
-
 //// space active objects properties
 enum Fraction {
 	neutral,
