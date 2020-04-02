@@ -1,5 +1,9 @@
 
-choice_change = obj_manned_ship.key_down - obj_manned_ship.key_up
+key_up = keyboard_check_pressed(vk_up)
+key_down = keyboard_check_pressed(vk_down)
+key_action = keyboard_check_pressed(ord("Z"))
+
+choice_change = key_down - key_up
 
 choice = scr_cycle_val(choice, -choice_change, array_length_1d(choices)-1)
 
@@ -11,5 +15,7 @@ if is_string(choices)
 
 if !is_array(choices) {
 	instance_destroy()
-	obj_manned_ship.control_state = Control.normal
+	
+	if instance_exists(obj_manned_ship)
+		obj_manned_ship.control_state = Control.normal
 }

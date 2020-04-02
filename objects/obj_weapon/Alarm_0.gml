@@ -1,17 +1,10 @@
 
 //// weapon control
-a = keyboard_check_pressed(ord("Z"))
-b = host.object_index!=obj_manned_ship
-
-shoot = keyboard_check_pressed(ord("Z"))*(host.object_index==obj_manned_ship) or triggered
-
 if room == rm_battle {
 	switch type {
 		case "crusher": {
-			if shoot  {
-				
+			if triggered  {
 				triggered = false
-				
 				if charge and !alarm[1] {
 					// create projectile
 					 var proj = instance_copy(true) 

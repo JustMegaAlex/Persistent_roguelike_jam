@@ -33,7 +33,6 @@ else {
 		}
 	
 		if protagonist_dead {
-			scr_cell_clear(obj_manned_ship)
 			scr_dialog_open(scr_dialog_game_over)
 		}
 		else {

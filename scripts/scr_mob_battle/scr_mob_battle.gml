@@ -1,6 +1,6 @@
 
-var distv = obj_manned_ship.y - y
-var disth = x - obj_manned_ship.x
+var distv = obj_player.y - y
+var disth = x - obj_player.x
 
 switch battle_state {
 	case Battle.idle: {
