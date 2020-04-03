@@ -6,7 +6,8 @@
     "children": [
         "ff329f15-9b48-4599-9b64-7220db3ad891",
         "a44f451f-5ec0-4c50-b70b-88909b9a954d",
-        "680cc28a-eaa9-4551-8627-051526bd1bf5"
+        "680cc28a-eaa9-4551-8627-051526bd1bf5",
+        "28911702-ce10-4ad7-89db-cf743a531e49"
     ],
     "filterType": "GMObject",
     "folderName": "Equipment",

@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "28911702-ce10-4ad7-89db-cf743a531e49",
+            "Value": {
+                "id": "18d78e3e-4bdf-4d42-ae97-df50bd6a4b3c",
+                "resourcePath": "objects\\obj_swarm_rocket\\obj_swarm_rocket.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2a423182-54c9-41ce-b5ee-113ea619e8ac",
             "Value": {
                 "id": "066d7540-a267-4b2e-89a7-623a99a4235e",
@@ -458,7 +466,7 @@
             "Key": "680cc28a-eaa9-4551-8627-051526bd1bf5",
             "Value": {
                 "id": "8aeec331-78d7-45e7-a75f-4266b73df428",
-                "resourcePath": "objects\\object27\\object27.yy",
+                "resourcePath": "objects\\obj_synchrophaser\\obj_synchrophaser.yy",
                 "resourceType": "GMObject"
             }
         },
