@@ -8,6 +8,6 @@ while !scr_try_move_rel(delta_i, delta_j) {
 	delta_j = lengthdir_y(1, input_dir*90)
 }
 
-control_script = scr_move
+control_script = scr_anim_move
 
 scr_sys_process_continue()

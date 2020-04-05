@@ -33,7 +33,7 @@ switch control_state {
 				}
 			}
 			if scr_try_move_rel(delta_i, delta_j) {
-				control_script = scr_move
+				control_script = scr_anim_move
 				alarm[0] = turn_delay
 			}
 		}	

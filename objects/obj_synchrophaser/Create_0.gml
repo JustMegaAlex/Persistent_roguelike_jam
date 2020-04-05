@@ -1,7 +1,7 @@
 
 host = noone
 level = 0
-usable = "swarm rockets"
+usable = "swarm rocket"
 
 //// usables
 //// swarm rocket

@@ -13,7 +13,8 @@ if !battle_end {
 		x = obj_player.x
 		y = obj_player.y
 		control_script = scr_protagonist_battle
-		eq_weapon.alarm[0] = 2
+		eq_weapon.alarm[0] = 1
+		eq_phase.alarm[0] = 1
 	}
 }
 else {

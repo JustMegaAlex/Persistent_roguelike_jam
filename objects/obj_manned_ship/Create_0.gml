@@ -27,8 +27,7 @@ jump_j = 0
 //// equipment
 frame_active = true
 eq_weapon = scr_eq_get_instance(obj_weap_crusher)
-//eq_phase = scr_eq_get_instance(obj_equipment.ph_basic)
-eq_phase = noone
+eq_phase = scr_eq_get_instance(obj_synchrophaser)
 //// ui 
 battle_cam_y = -30
 scr_camera_set_center(0, x, y)
