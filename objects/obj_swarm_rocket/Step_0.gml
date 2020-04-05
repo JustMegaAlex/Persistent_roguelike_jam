@@ -28,8 +28,10 @@ switch homing {
 			instance_destroy()
 		
 		var got_him = place_meeting(x, y, obj_active_instance_parent)
-		if got_him and got_him != host
+		if got_him and got_him != host {
+			scr_bring_damage(got_him, damage)
 			instance_destroy()
+		}
 	}
 }
 

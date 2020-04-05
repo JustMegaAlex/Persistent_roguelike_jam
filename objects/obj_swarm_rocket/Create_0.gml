@@ -1,6 +1,8 @@
 
 event_inherited()
 
+damage = 15
+
 host = noone
 homing = false
 spin_rot_sp = 6
