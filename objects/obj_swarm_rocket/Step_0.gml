@@ -24,7 +24,7 @@ switch homing {
 		sp_x = scr_approach(sp_x, sp_x_to, acc)
 		sp_y = scr_approach(sp_y, sp_y_to, acc)
 		
-		
+
 		if dist < timer_trigger_dist
 			explosion_timer--
 		if !explosion_timer

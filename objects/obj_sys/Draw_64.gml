@@ -16,3 +16,6 @@ for(var i=0; i<ds_list_size(global.queue); i++)
 	list += string(global.queue[| i] mod 10000) + ", "
 
 scr_debug_show_var("queue", list)
+scr_debug_show_var("level size:", string(global.level_w)+" "+string(global.level_h))
+if instance_exists(obj_manned_ship)
+	scr_debug_show_var("prot i j:", string(obj_manned_ship.i)+" "+string(obj_manned_ship.j))

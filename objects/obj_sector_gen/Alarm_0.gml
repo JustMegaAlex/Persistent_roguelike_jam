@@ -4,6 +4,9 @@ if instance_exists(obj_space_instance_parent)
 		if object_index != obj_manned_ship { instance_destroy() }
 ds_grid_clear(global.grid, 0)
 
+global.level_w = 0
+global.level_h = 0
+
 if sector_type == "random" {
 	
 	bigger_sector = scr_chance(0.5)

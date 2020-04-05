@@ -11,7 +11,7 @@ var target_j = argument[1]
 var size = inst.size_in_universe
 
 // check placement out of bounds
-if (scr_get_cell(target_i, target_i)==1) or (scr_get_cell(target_i+size, target_i+size)==1)
+if (scr_get_cell(target_i, target_j)==1) or (scr_get_cell(target_i+size, target_j+size)==1)
 	return false
 
 // check region is free
