@@ -45,5 +45,7 @@ dir = 0
 move_v = 0
 move_h = 0
 
+synchronized = 1
+
 //// abilities
 list_abilities = ds_list_create()

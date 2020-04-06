@@ -6,7 +6,8 @@ if !battle_end {
 		image_angle = 270
 		x = obj_opponent.x
 		y = obj_opponent.y
-		eq_weapon.alarm[0] = 2
+		eq_weapon.alarm[0] = 2 
+		synchronized = 1
 	}
 	
 	with obj_manned_ship {
@@ -15,6 +16,7 @@ if !battle_end {
 		control_script = scr_protagonist_battle
 		eq_weapon.alarm[0] = 1
 		eq_phase.alarm[0] = 1
+		synchronized = 1
 	}
 }
 else {
@@ -24,6 +26,13 @@ else {
 	if room == rm_battle {
 		if instance_exists(obj_parent_projectile)
 			instance_destroy(obj_parent_projectile)
+			
+		if !oponent_dead
+			with oponent_world
+				control_script = scr_mob_control
+				
+		room_goto(rm_return_to)	
+		
 		alarm[0] = 1
 	}
 	else {
@@ -48,9 +57,9 @@ else {
 				persistent = false
 				
 				if instance_exists(eq_weapon)
-					eq_weapon.persistent = true
+					eq_weapon.persistent = false
 				if instance_exists(eq_phase)
-					eq_phase.persistent = true
+					eq_phase.persistent = false
 			}
 		}
 		instance_destroy()
