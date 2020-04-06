@@ -10,3 +10,7 @@ oponent_world = noone
 rm_return_to = room
 
 alarm[0] = 1
+
+// create battle exit
+exit_timer = room_speed*12
+alarm[1] = exit_timer
