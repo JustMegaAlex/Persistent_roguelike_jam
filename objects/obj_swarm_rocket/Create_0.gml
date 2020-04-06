@@ -14,9 +14,10 @@ sp_y_to = 0
 sp_spinning = 1
 image_angle = random(360)
 spinning_time = 40 + random(30)
-homing_rot_sp = 0.5
+homing_rot_sp = 0.7
 acc = 0.1
 homing_disperse_angle = 10
+explosion_radius = 10
 
 //// spawning
 spawn_num_total = 8
