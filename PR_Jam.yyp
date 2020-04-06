@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "81adfe95-2942-4494-9c10-82297a2f7068",
+            "Value": {
+                "id": "b3f891a7-a8e6-486b-8fc5-4d8c8736547e",
+                "resourcePath": "sprites\\spr_battle_exit\\spr_battle_exit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8314def7-0389-4452-a29b-66e03a9bf233",
             "Value": {
                 "id": "314d9bb1-4b96-4db2-99af-fad57ae1b866",

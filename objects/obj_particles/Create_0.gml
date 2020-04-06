@@ -13,4 +13,4 @@ part_type_life(part_projectile_explosion,
 part_type_sprite(part_projectile_explosion, 
 					spr_explosion, 
 					true, true, false)
-					
+part_type_orientation(part_projectile_explosion, 0, 360, 0, 0, false)
