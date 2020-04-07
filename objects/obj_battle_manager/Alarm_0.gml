@@ -51,6 +51,7 @@ else {
 				image_angle = 90
 				x = scr_x(i)
 				y = scr_y(j)
+				durability = durability_max
 			}
 		}
 		
