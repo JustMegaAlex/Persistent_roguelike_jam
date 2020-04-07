@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "6012358e-e8b0-4e03-89a6-d899bab44f50",
+            "Value": {
+                "id": "73bea180-cf29-4f1f-bda8-5a029e657ad1",
+                "resourcePath": "sprites\\spr_spark\\spr_spark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "60c4dc6c-da7a-4631-a3ae-3bc576c57ed6",
             "Value": {
                 "id": "dd13957a-8944-4bc9-a6d8-a6aac887dda4",

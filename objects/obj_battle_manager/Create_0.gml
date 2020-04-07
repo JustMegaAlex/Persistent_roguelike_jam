@@ -17,3 +17,7 @@ alarm[1] = exit_timer
 
 // create asteroids
 aster_num = 25
+
+// particles
+particle_rate = 0.1
+particle_ready = 0
