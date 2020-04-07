@@ -1,2 +1,5 @@
 
 > choose how much energy to take in battle
+> synchrobubble = invis and invince
+> multiple mobs in batlle
+> mobs power up each other in battle
