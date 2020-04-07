@@ -83,10 +83,10 @@ switch control_state {
 		jump_j = j+jump_current_dist*!jump_horizontal
 		if key_action {
 			if abs(jump_current_dist) and !scr_get_cell(jump_i, jump_j) {
+				energy--
 				scr_swap_cells(i, j, jump_i, jump_j)
 				scr_set_grid_pos(jump_i, jump_j)
 				control_script = scr_anim_jump
-				energy--
 				control_state = Control.normal
 			}
 		}

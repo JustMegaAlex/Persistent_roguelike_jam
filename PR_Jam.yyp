@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "ab2f077c-dd36-4fad-93a0-b43d59129dd9",
+            "Value": {
+                "id": "de63c79d-ee92-4cea-b0d7-b0db427b11a5",
+                "resourcePath": "scripts\\scr_pick_up_bonus\\scr_pick_up_bonus.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ad11e31e-806b-4b1e-865b-bed017ebb067",
             "Value": {
                 "id": "f1b5bab6-29ea-4ea2-b978-0065e3627c1f",
@@ -1686,6 +1694,7 @@
         "11aa1f41-b729-4dd3-ab0e-fc013839cdc8",
         "b109f160-ccb3-488f-b1b2-3f16f3e25bb3",
         "4819ca37-e9b0-4cef-a6cf-8c85710d8857",
+        "ab2f077c-dd36-4fad-93a0-b43d59129dd9",
         "1dea5d7d-376f-4af4-bc6a-742a9cb05d50",
         "ab2aeefe-203f-4fe7-a7d9-7c0ac914bcab",
         "dbe701a8-e5a2-416c-8054-72e900625140",
