@@ -49,7 +49,7 @@ else {
 		
 		if !oponent_dead {
 			with oponent_world {
-				control_script = scr_mob_control
+				scr_control_reset()
 				image_angle = 90
 				x = scr_x(i)
 				y = scr_y(j)

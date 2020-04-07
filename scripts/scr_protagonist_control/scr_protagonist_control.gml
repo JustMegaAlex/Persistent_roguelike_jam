@@ -25,7 +25,7 @@ switch control_state {
 			input_dir--
 			var delta_i = lengthdir_x(1, input_dir*90)
 			var delta_j = lengthdir_y(1, input_dir*90)
-			var inst = scr_get_cell(i+delta_i, j+ delta_j)
+			var inst = scr_get_cell(i + delta_i, j + delta_j)
 			if inst {
 				if inst.object_index == obj_mob {
 					scr_start_battle(inst)
