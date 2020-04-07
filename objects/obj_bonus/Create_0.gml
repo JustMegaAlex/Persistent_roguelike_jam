@@ -5,8 +5,10 @@ map_types = ds_map_create()
 
 map_types[? "energy"] = 0
 map_types[? "sr"] = 1
+map_types[? "sb"] = 2
 
-type = "energy"
+type = choose("energy", "energy", "energy", "energy", "sr", "sb", "sr")
 
-// late init
-alarm[0] = 1
+image_index = map_types[? type]
+
+ds_map_destroy(map_types)
