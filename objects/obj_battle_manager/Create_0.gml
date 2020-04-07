@@ -14,3 +14,6 @@ alarm[0] = 1
 // create battle exit
 exit_timer = room_speed*4
 alarm[1] = exit_timer
+
+// create asteroids
+aster_num = 25

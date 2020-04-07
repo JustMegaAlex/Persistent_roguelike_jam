@@ -18,6 +18,11 @@ if !battle_end {
 		eq_phase.alarm[0] = 1
 		synchronized = 1
 	}
+	
+	//// create asters
+	repeat aster_num {
+	    instance_create_layer(irandom(room_width), irandom(room_height), "Instances", obj_b_asteroid)
+	}
 }
 else {
 	//// end battle
@@ -40,12 +45,14 @@ else {
 		if protagonist_dead {
 			scr_dialog_open(scr_dialog_game_over)
 		}
-		else with obj_manned_ship {
+		else {
+			with obj_manned_ship {
 				control_script = scr_protagonist_control
 				image_angle = 90
 				x = scr_x(i)
 				y = scr_y(j)
 			}
+		}
 		
 		if !oponent_dead {
 			with oponent_world {
