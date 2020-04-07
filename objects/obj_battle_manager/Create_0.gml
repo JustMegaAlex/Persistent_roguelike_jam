@@ -12,5 +12,5 @@ rm_return_to = room
 alarm[0] = 1
 
 // create battle exit
-exit_timer = room_speed*12
+exit_timer = room_speed*4
 alarm[1] = exit_timer
