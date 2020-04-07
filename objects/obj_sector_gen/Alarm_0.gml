@@ -72,8 +72,6 @@ if sector_type == "random" {
 							if !scr_get_cell(ii, jj) and !global.grid_special[# ii, jj] {
 								var inst = instance_create_layer(scr_x(ii), scr_y(jj), "Instances", obj_bonus)
 								global.grid_special[# ii, jj] = inst
-								if scr_chance(0.25)
-									inst.type = "sr"
 								bonus_num--
 								bonuses--
 								if !bonuses
