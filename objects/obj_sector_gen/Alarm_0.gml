@@ -98,6 +98,23 @@ if sector_type == "random" {
 												area_j + col_sizes[j]-1,
 												obj_asteroid)
 					}
+					
+					if bonus_num {
+						var bonuses = 1
+						repeat 1000 {
+							ii = area_i + irandom(col_sizes[i])
+							jj = area_j + irandom(row_sizes[i])
+							if !scr_get_cell(ii, jj) and !global.grid_special[# ii, jj] {
+								var inst = instance_create_layer(scr_x(ii), scr_y(jj), "Instances", obj_bonus)
+								global.grid_special[# ii, jj] = inst
+								bonus_num--
+								bonuses--
+								if !bonuses
+									break
+							}
+						}
+					}
+					
 					break
 				}
 			}
