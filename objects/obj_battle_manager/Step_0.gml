@@ -7,9 +7,9 @@ if !oponent_dead
 	someone_exit = !oponent_world.synchronized
 
 if !protagonist_dead
-	someone_exit = !obj_manned_ship.synchronized or someone_exit
+	someone_exit = someone_exit or !obj_manned_ship.synchronized
 
-battle_end = keyboard_check_pressed(ord("E")) or protagonist_dead or oponent_dead
+battle_end = keyboard_check_pressed(ord("E")) or someone_exit
 
 if someone_exit or protagonist_dead {
 	event_perform(ev_alarm, 0)
