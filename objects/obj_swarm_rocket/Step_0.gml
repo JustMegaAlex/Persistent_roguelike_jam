@@ -30,10 +30,11 @@ switch homing {
 		if !explosion_timer
 			instance_destroy()
 		
-		var got_him = instance_place(x, y, obj_active_instance_parent)
-		if got_him and got_him != host {
-			// scr_bring_damage(got_him, damage)
-			instance_destroy()
+		if instance_exists(obj_active_instance_parent) {
+			got_him = instance_place(x, y, obj_active_instance_parent)
+			if got_him and got_him != host {
+				instance_destroy()
+			}
 		}
 	}
 }

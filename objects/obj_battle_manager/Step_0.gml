@@ -11,6 +11,6 @@ if !protagonist_dead
 
 battle_end = keyboard_check_pressed(ord("E")) or protagonist_dead or oponent_dead
 
-if someone_exit {	
+if someone_exit or protagonist_dead {
 	event_perform(ev_alarm, 0)
 }
