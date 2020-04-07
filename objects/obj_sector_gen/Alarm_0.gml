@@ -62,7 +62,27 @@ if sector_type == "random" {
 												area_j + col_sizes[j]-1,
 												obj_asteroid)
 					}
+					
+					// place bonuses
+					if bonus_num {
+						var bonuses = min(bonus_num, 3)
+						repeat 1000 {
+							ii = area_i + irandom(col_sizes[i])
+							jj = area_j + irandom(row_sizes[i])
+							if !scr_get_cell(ii, jj) and !global.grid_special[# ii, jj] {
+								var inst = instance_create_layer(scr_x(ii), scr_y(jj), "Instances", obj_bonus)
+								global.grid_special[# ii, jj] = inst
+								if scr_chance(0.25)
+									inst.type = "sr"
+								bonus_num--
+								bonuses--
+								if !bonuses
+									break
+							}
+						}
+					}
 					break
+					
 				}
 				case "empty": {
 					////

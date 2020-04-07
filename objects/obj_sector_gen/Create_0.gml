@@ -7,4 +7,4 @@ alarm[0] = 1
 
 mobs_num = 10
 
-bunus_numb = 40
+bonus_num = 40

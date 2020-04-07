@@ -25,6 +25,7 @@ spawn_num = spawn_num_total
 spawn_angle = 210
 spawn_disperse_angle = 15
 dir = 0
+target_dir = 0
 dir_correction = 0
 dir_correction_step = 5
 alarm[1] = 1

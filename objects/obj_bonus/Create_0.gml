@@ -7,3 +7,6 @@ map_types[? "energy"] = 0
 map_types[? "sr"] = 1
 
 type = "energy"
+
+// late init
+alarm[0] = 1
