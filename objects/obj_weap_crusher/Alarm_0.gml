@@ -13,7 +13,7 @@ if room == rm_battle {
 			alarm[1] = shoot_delay
 			charge--
 			if !charge
-				if scr_spend_energy(energy_consumption, host)
+				if scr_change_energy(energy_consumption, host)
 					charge = capacity
 		}
 	}

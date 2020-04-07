@@ -1426,7 +1426,7 @@
             "Key": "e416696e-1258-4a8a-8948-3a6843b21b45",
             "Value": {
                 "id": "80d8e9d5-0e7c-4889-9fb6-5de91cbc4af7",
-                "resourcePath": "scripts\\scr_spend_energy\\scr_spend_energy.yy",
+                "resourcePath": "scripts\\scr_change_energy\\scr_change_energy.yy",
                 "resourceType": "GMScript"
             }
         },
