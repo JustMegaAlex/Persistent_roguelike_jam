@@ -28,7 +28,14 @@ part_type_sprite(part_b_spark, spr_spark, true, true, false)
 part_type_scale(part_b_spark, scr_camw(0)*1.6, 1)
 part_type_alpha2(part_b_spark, 0.2, 0)
 
-
+// bonus sparks
+part_bonus_spark = part_type_create()
+life_time = room_speed * 0.25
+sp = 1
+part_type_life(part_bonus_spark, life_time, life_time)
+part_type_speed(part_bonus_spark, sp, sp, 0, 0)
+part_type_sprite(part_bonus_spark, spr_spark, true, true, false)
+part_type_alpha2(part_bonus_spark, 1, 0.2)
 
 
 

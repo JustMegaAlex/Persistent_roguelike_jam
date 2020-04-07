@@ -12,3 +12,6 @@ type = choose("energy", "energy", "energy", "energy", "sr", "sb", "sr")
 image_index = map_types[? type]
 
 ds_map_destroy(map_types)
+
+// effects
+part_num = 16
