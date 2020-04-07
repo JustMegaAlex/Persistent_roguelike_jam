@@ -14,7 +14,7 @@ if obj_manned_ship.energy
 	ds_list_add(list_actions, "jump")
 if obj_manned_ship.energy > 1
 	ds_list_add(list_actions, "warp")
-if !global.grid_special[# obj_manned_ship.i, obj_manned_ship.j]
+if !global.grid_special[# obj_manned_ship.i, obj_manned_ship.j] and obj_manned_ship.items_sb_num
 	ds_list_add(list_actions, "synchrobubble")
 
 actions_num = ds_list_size(list_actions)
