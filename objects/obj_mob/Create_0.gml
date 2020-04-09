@@ -3,6 +3,16 @@ event_inherited()
 
 general_state = scr_mob_control
 
+//// ai behaviour init
+
+enum Behav {
+	wonder,
+	patrol,
+	ambush,
+}
+
+behaviour = choose(Behav.wonder, Behav.patrol, Behav.ambush)
+
 frame_active = true
 
 //// equipment
@@ -26,3 +36,6 @@ dir = 270
 
 
 durability = 40
+
+//// late init
+alarm[1] = 1
