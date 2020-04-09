@@ -30,7 +30,7 @@ part_type_alpha2(part_b_spark, 0.2, 0)
 
 // bonus sparks
 part_bonus_spark = part_type_create()
-life_time = room_speed * 0.25
+life_time = room_speed * 0.17
 sp = 1
 part_type_life(part_bonus_spark, life_time, life_time)
 part_type_speed(part_bonus_spark, sp, sp, 0, 0)
