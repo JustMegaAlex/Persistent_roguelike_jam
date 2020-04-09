@@ -20,6 +20,8 @@ global.level_h = 10
 global.grid_size = 16
 global.grid = ds_grid_create(global.level_w, global.level_h)
 global.grid_special = ds_grid_create(global.level_w, global.level_h)
+global.mp_grid = mp_grid_create(0, 0, 1, 1, 1, 1) // temp, will be set in obj_sector_gen
+
 
 //// instances queue list
 global.queue = ds_list_create()

@@ -127,5 +127,24 @@ if sector_type == "random" {
 for(var i=0; i<mobs_num; i++) {
 	scr_set_grid_pos_in_region(0, 0, global.level_w-1, global.level_h-1, obj_mob)
 }
+
+//// path grid
+mp_grid_destroy(global.mp_grid)
+var s = global.grid_size
+global.mp_grid = mp_grid_create(s*0.5, s*0.5, global.level_w, global.level_h, s, s)
+for (var i = 0; i < global.level_w; i++) {
+    for (var j = 0; j < global.level_h; j++) {
+	    inst = scr_get_cell(i, j)
+		if inst
+			if !object_is_ancestor(inst, obj_active_instance_parent) {
+				mp_grid_add_cell(global.mp_grid, i, j)
+			}
+	}
+}
 	
 instance_destroy()	
+
+
+
+
+
