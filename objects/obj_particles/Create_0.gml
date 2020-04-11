@@ -23,8 +23,6 @@ var sp = 3
 var dir = 20
 part_type_life(part_b_spark, life_time, life_time)
 part_type_sprite(part_b_spark, spr_spark, true, true, false)
-// part_type_speed(part_b_spark, sp, sp, 0, 0)
-// part_type_direction(part_b_spark, 180-dir, 180+dir, 0, 0)
 part_type_scale(part_b_spark, scr_camw(0)*1.6, 1)
 part_type_alpha2(part_b_spark, 0.2, 0)
 
