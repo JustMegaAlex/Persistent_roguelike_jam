@@ -951,6 +951,14 @@
             }
         },
         {
+            "Key": "971bf6d9-4a9c-43bb-bf7d-1b11eda13ed1",
+            "Value": {
+                "id": "023dec10-79d2-45cc-9df8-8d99500682ac",
+                "resourcePath": "objects\\obj_mp_grid_draw\\obj_mp_grid_draw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "97478d3c-2e12-4527-87a3-4a110885c6a9",
             "Value": {
                 "id": "c6ee2136-6655-4583-a53f-b301200d1be4",
