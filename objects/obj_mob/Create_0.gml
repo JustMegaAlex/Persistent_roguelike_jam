@@ -12,6 +12,8 @@ enum Behav {
 }
 
 behaviour = choose(Behav.wonder, Behav.patrol, Behav.ambush)
+pursue_target = noone
+vision_range = 6
 
 frame_active = true
 

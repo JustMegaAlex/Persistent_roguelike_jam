@@ -2,6 +2,9 @@
 //// late init
 // generate patrol path
 if behaviour == Behav.patrol {
+	
+	on_patrol = false
+	
 	var max_rad = min(global.level_w, global.level_h)*0.4
 	var rad = 0.6 + random(0.4)*max_rad
 	var dir0 = irandom(360)
