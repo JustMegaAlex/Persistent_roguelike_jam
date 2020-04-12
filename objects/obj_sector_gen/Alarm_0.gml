@@ -135,8 +135,7 @@ for(var i=0; i<mobs_num; i++) {
 
 //// path grid
 mp_grid_destroy(global.mp_grid)
-var s = global.grid_size
-global.mp_grid = mp_grid_create(-s*0.5, -s*0.5, global.level_w, global.level_h, s, s)
+global.mp_grid = mp_grid_create(0, 0, global.level_w, global.level_h, 1, 1)
 for (var i = 0; i < global.level_w; i++) {
     for (var j = 0; j < global.level_h; j++) {
 	    inst = scr_get_cell(i, j)

@@ -35,15 +35,35 @@ switch behaviour {
 		}
 		else {
 			if instance_exists(obj_manned_ship) {
+				
 				if target_grid_dist <= vision_range {
 					pursue_target = obj_manned_ship
+					on_patrol = false
 				}
+				
 				else if on_patrol {
-					
+					scr_try_follow_path()
+					if follow_path_end {
+						follow_path_end = false
+						current_path_dir *= -1
+					}
 				}
+				
+				else if current_path {
+					scr_try_follow_path()
+					if follow_path_end {
+						scr_path_destroy(current_path)
+						scr_set_follow_path(mp_path)
+						on_patrol = true
+					}
+				}
+				
 				else {
-					// find nearest patrol point
-					// path_
+					// follow to the patrol pth first point
+					path_follow = path_add()
+					scr_compute_path(path_follow, patrol_x, patrol_y)
+					scr_set_follow_path(path_follow)
+					scr_try_follow_path()
 				}
 			}
 		}

@@ -15,6 +15,14 @@ behaviour = choose(Behav.wonder, Behav.patrol, Behav.ambush)
 pursue_target = noone
 vision_range = 6
 
+//paths
+current_path_dir = 1
+current_path_point = 0
+current_path = -1
+follow_path_end = false
+mp_path = path_add()
+path_follow = path_add()
+
 frame_active = true
 
 //// equipment

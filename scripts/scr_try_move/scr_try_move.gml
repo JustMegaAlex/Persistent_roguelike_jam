@@ -1,5 +1,5 @@
-///@arg delta_i
-///@arg delta_j
+///@arg i
+///@arg j
 ///@arg inst
 var inst = id
 
