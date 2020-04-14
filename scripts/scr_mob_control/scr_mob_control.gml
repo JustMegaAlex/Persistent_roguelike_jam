@@ -42,28 +42,15 @@ switch behaviour {
 				}
 				
 				else if on_patrol {
-					scr_try_follow_path()
-					if follow_path_end {
-						follow_path_end = false
-						current_path_dir *= -1
-					}
+					
 				}
 				
 				else if current_path {
-					scr_try_follow_path()
-					if follow_path_end {
-						scr_path_destroy(current_path)
-						scr_set_follow_path(mp_path)
-						on_patrol = true
-					}
+					
 				}
 				
 				else {
-					// follow to the patrol pth first point
-					path_follow = path_add()
-					scr_compute_path(path_follow, patrol_x, patrol_y)
-					scr_set_follow_path(path_follow)
-					scr_try_follow_path()
+					
 				}
 			}
 		}
