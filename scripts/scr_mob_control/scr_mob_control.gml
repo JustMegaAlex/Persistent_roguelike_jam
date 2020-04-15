@@ -45,10 +45,6 @@ switch behaviour {
 					
 				}
 				
-				else if current_path {
-					
-				}
-				
 				else {
 					
 				}
