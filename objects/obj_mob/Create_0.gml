@@ -15,6 +15,16 @@ behaviour = Behav.patrol //choose(Behav.wonder, Behav.patrol, Behav.ambush)
 pursue_target = noone
 vision_range = 6
 
+// patrol vars
+on_patrol = false
+patrol_path_len = 0
+patrol_xpoints = -1
+patrol_ypoints = -1
+patrol_point_to = 0
+patrol_sergment_dist = 0
+patrol_segment_len = 0
+patrol_dir = 0
+
 frame_active = true
 
 //// equipment

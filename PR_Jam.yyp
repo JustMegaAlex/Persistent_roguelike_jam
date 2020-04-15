@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "13d3f412-df32-4bfa-b0b7-b0704d918637",
+            "Value": {
+                "id": "264921a7-4743-42a3-8a26-bdb261c376f2",
+                "resourcePath": "scripts\\scr_move_patrol\\scr_move_patrol.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1493996c-b59e-4bce-9176-27848b16aeaa",
             "Value": {
                 "id": "1d416e6a-7e9f-45a1-b675-bddf58698492",
@@ -1740,6 +1748,7 @@
         "2695a0f5-cc0d-4866-8183-ab9178052642",
         "879ac98c-cd99-40ed-9c08-7971039ddb9b",
         "996834db-f3cf-4d91-8b36-c7045339dd24",
+        "13d3f412-df32-4bfa-b0b7-b0704d918637",
         "40930685-a1e7-475a-9229-32ecb9c2a1dd",
         "642f829d-73c7-4070-a130-6b2ee6a13605",
         "6b053802-3494-400a-9baa-073a40fb4d6a",

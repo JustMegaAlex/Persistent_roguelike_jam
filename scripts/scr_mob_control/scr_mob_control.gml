@@ -42,7 +42,7 @@ switch behaviour {
 				}
 				
 				else if on_patrol {
-					
+					scr_move_patrol()
 				}
 				
 				else {

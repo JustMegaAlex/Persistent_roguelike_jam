@@ -3,7 +3,7 @@
 // generate patrol path
 if behaviour == Behav.patrol {
 	on_patrol = false
-	patrol_path_len = 0
+	patrol_segment_count = 0
 	patrol_xpoints = ds_list_create()
 	patrol_ypoints = ds_list_create()
 	
@@ -23,18 +23,19 @@ if behaviour == Behav.patrol {
 	while lines < path_lines {
 		dir = irandom(3)
 		
-		if abs(dir-dir_pre) == 2 {
-			for (var i = lines-1; i >= 0; i--) {
-			    scr_patrol_add_point(patrol_xpoints[| i], patrol_ypoints[| i])
-			}
+		if abs(dir-dir_pre) == 2
 			break
-		}
+			
 		dir_pre = dir
 		delta = min_line_len + irandom(rand_len)
 		ii += lengthdir_x(delta, dir*90)
 		jj += lengthdir_y(delta, dir*90)
 		scr_patrol_add_point(ii, jj)
 		lines++
+	}
+	
+	for (var i = lines-1; i >= 0; i--) {
+		scr_patrol_add_point(patrol_xpoints[| i], patrol_ypoints[| i])
 	}
 }
 	
