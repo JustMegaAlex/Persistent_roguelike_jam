@@ -15,13 +15,22 @@ switch behaviour {
 		break
 	}
 	case Behav.patrol: {
-		if pursue_target {
-			
+		pursue_target = noone
+		on_patrol = true
+		
+		if instance_exists(obj_manned_ship) {
+			if target_grid_dist <= vision_range {
+				pursue_target = obj_manned_ship
+				on_patrol = false
+			}
+		}
+
+		if on_patrol {
+			scr_move_patrol()
+		}
+		else {
 			if target_grid_dist == 1 {
 				scr_start_battle(id)
-			}
-			else if target_grid_dist > vision_range {
-				pursue_target = noone
 			}
 			else {
 				var raw_dir = point_direction(x, y, pursue_target.x, pursue_target.y)/90
@@ -33,27 +42,8 @@ switch behaviour {
 				else scr_try_move_dir(dir+2)
 			}
 		}
-		else {
-			if instance_exists(obj_manned_ship) {
-				
-				if target_grid_dist <= vision_range {
-					pursue_target = obj_manned_ship
-					on_patrol = false
-				}
-				
-				else if on_patrol {
-					scr_move_patrol()
-				}
-				
-				else {
-					
-				}
-			}
-		}
 	}
 }
-
-
 
 control_script = scr_anim_move
 

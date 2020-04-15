@@ -9,14 +9,14 @@ if behaviour == Behav.patrol {
 	
 	var dir, dir_pre, delta, ii, jj, lines, path_lines, min_line_len, rand_len
 	
-	min_line_len = 5
-	path_lines = 4
-	rand_len = 3
+	min_line_len = 4
+	path_lines = 3
+	rand_len = 2
 	
 	//var path_kind = choose("linear", "L", "square", "Z")
 	
 	scr_patrol_add_point(0, 0)
-	dir_pre = -1
+	dir_pre = -10
 	lines = 0
 	ii = 0 
 	jj = 0

@@ -23,7 +23,6 @@ patrol_ypoints = -1
 patrol_point_to = 0
 patrol_sergment_dist = 0
 patrol_segment_len = 0
-patrol_dir = 0
 
 frame_active = true
 
