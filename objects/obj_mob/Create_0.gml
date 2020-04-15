@@ -11,7 +11,7 @@ enum Behav {
 	ambush,
 }
 
-behaviour = choose(Behav.wonder, Behav.patrol, Behav.ambush)
+behaviour = Behav.patrol //choose(Behav.wonder, Behav.patrol, Behav.ambush)
 pursue_target = noone
 vision_range = 6
 
