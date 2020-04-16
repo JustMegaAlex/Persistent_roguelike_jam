@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "3c4a43f7-2b06-48d6-9a15-1198be37c053",
+            "Value": {
+                "id": "0ec9797b-c2c0-4aad-9fd4-865cc430f1b2",
+                "resourcePath": "objects\\obj_battle_instance\\obj_battle_instance.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3dba0a14-a47d-4f2d-87f6-4c780f18476f",
             "Value": {
                 "id": "3f9552c6-82ac-4172-a617-6d5dcab364fe",
