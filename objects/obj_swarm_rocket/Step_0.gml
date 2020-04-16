@@ -11,6 +11,7 @@ switch homing {
 	}
 	
 	case true: {
+		dist = 0
 		if instance_exists(target) {
 			target_dir = point_direction(x, y, target.x, target.y) + dir_correction
 			dist = point_distance(x, y, target.x, target.y)
