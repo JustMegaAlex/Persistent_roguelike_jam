@@ -1,6 +1,6 @@
 
 
-if input_mode == Input.world and !process_busy {
+if input_mode == Input.world and !process_busy and room != rm_battle{
 	
 	inst_current = global.queue[| queue_pos]
 	
