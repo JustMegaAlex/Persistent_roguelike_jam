@@ -29,6 +29,10 @@ switch current_behaviour {
 		scr_move_patrol()
 		break
 	}
+	case Behav.ambush: {
+		/// just ambush
+		break	
+	}
 	
 	case Behav.persue: {
 		if target_grid_dist == 1 {

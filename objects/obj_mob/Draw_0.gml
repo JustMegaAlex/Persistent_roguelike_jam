@@ -1,5 +1,7 @@
 draw_self()
 
+draw_text(x, y - 12, string(current_behaviour))
+
 //if behaviour == Behav.patrol and !alarm[1] {
 //	for (var k = 0; k < patrol_segment_count-2; k++) {
 //		var i0, j0, i1, j1
