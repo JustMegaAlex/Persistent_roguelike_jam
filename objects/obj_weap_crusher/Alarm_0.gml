@@ -12,10 +12,12 @@ if room == rm_battle {
 			prj.host = host
 			alarm[1] = shoot_delay
 			charge--
-			if !charge
-				if scr_change_energy(-energy_consumption, host)
-					charge = capacity
 		}
 	}
 	alarm[0] = 1
+	
+	// recharge
+	if !charge
+				if scr_change_energy(-energy_consumption, host)
+					charge = capacity
 }
