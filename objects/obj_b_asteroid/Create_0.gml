@@ -9,3 +9,5 @@ dir = random(360)
 image_rot_sp = 0
 if scr_chance(0.4)
 	image_rot_sp = 0.1 * (1 - 2*scr_chance(0.5))
+	
+durability = 30
