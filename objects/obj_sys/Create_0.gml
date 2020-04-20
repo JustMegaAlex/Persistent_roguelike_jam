@@ -1,4 +1,4 @@
-//////////init gameplay
+////////// init gameplay
 testing_sector = false
 
 //// ui
@@ -39,7 +39,7 @@ input = false
 display_set_gui_size(window_get_width(), window_get_height())
 
 scr_debug_INI()
-debug_on = true
+debug_on = false
 debug_show = debug_on
 
 //// space active objects properties
@@ -73,4 +73,4 @@ first_blood = true
 audio_master_gain(1)
 audio_sound_gain(snd_rocketlaunch, 0.3, 0)
 audio_sound_gain(snd_shot, 0.2, 0)
-audio_sound_gain(snd_ship_explotion, 0.6, 0)
+audio_sound_gain(snd_ship_explotion, 1.2, 0)

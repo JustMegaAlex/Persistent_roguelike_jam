@@ -2,15 +2,17 @@
 if dialog_start {
 	start  = ["Welcome to the Next Sector.",
 		["Next...", "tip2"]]
-	tip2 = ["Use arrows to navigate the labship.",
+	tip2 = ["Use arrows to navigate the ship.",
 		["...", "tip3"]]
-	tip3 = ["If you move into an akien ship you will attack it.",
-		["Yep", "tip6"]]
-	tip6 = ["While in battle: Z to shoot, E - retreat",
+	tip3 = ["If you move into an hostile ship you will attack it. Or they will attack you...",
+		["Yep", "tip4"]]
+	tip6 = ["While in battle: Z to shoot, C - use special weapon",
 		["Awesome", "tip4"]]
-	tip4 = ["You also can use some special abilities by pressing Q button",
+	tip4 = ["While not in battle you can use some special abilities by pressing Q button",
 		["Got it", "tip5"]]
-	tip5 = ["Go ahead test them yourself",
+	tip5 = ["\"Jump\" might be very useful",
+		["Got it", "tip6"]]
+	tip6 = ["Go ahead test them yourself",
 		["Thanks, dude!", false]]
 		
 	choices = start
