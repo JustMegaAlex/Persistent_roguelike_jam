@@ -12,6 +12,8 @@ if room == rm_battle {
 			prj.host = host
 			alarm[1] = shoot_delay
 			charge--
+			// play sound
+			audio_play_sound(snd_shot, 0, false)
 		}
 	}
 	alarm[0] = 1

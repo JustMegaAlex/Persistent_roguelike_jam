@@ -17,5 +17,7 @@ if object_index == obj_manned_ship {
 		}
 	instance_destroy(bonus)
 	global.grid_special[# i, j] = 0
+	// play sound 
+	audio_play_sound(snd_bonus, 0, false)
 	}
 }

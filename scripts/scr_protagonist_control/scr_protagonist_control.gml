@@ -88,6 +88,8 @@ switch control_state {
 				scr_set_grid_pos(jump_i, jump_j)
 				control_script = scr_anim_jump
 				control_state = Control.normal
+				// play sound 
+				audio_play_sound(snd_jump, 0, false)
 			}
 		}
 		

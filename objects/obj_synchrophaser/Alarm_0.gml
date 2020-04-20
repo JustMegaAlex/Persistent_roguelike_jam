@@ -7,6 +7,9 @@ if room == rm_battle {
 				inst.host = host
 				reload_time = sr_reload_time
 				usable_num--
+				// play sound
+				
+				audio_play_sound(snd_rocketlaunch, 0, false)
 				break
 			}
 		}
