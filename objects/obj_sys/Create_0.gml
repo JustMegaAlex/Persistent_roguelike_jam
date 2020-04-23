@@ -74,3 +74,7 @@ audio_master_gain(1)
 audio_sound_gain(snd_rocketlaunch, 0.3, 0)
 audio_sound_gain(snd_shot, 0.2, 0)
 audio_sound_gain(snd_ship_explotion, 1.2, 0)
+audio_sound_gain(snd_bit_space, 0.6, 0)
+
+// main theme
+audio_play_sound(snd_bit_space, 1, true)

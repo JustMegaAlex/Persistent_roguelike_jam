@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "1af4eb5b-f21b-480a-847f-45cc3a2ad010",
+            "Value": {
+                "id": "81aacf66-53af-4eb6-8655-6df14c5f8d87",
+                "resourcePath": "objects\\obj_battle_exit_pointer\\obj_battle_exit_pointer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1dea5d7d-376f-4af4-bc6a-742a9cb05d50",
             "Value": {
                 "id": "e17d03dd-d944-49d9-8fbe-788a97784465",
@@ -1175,6 +1183,14 @@
             }
         },
         {
+            "Key": "ab56de1b-a2bc-44d3-8814-fd6080991392",
+            "Value": {
+                "id": "f512070b-c05c-418f-9b02-ea64f749c0f5",
+                "resourcePath": "sounds\\snd_bit_space\\snd_bit_space.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ad11e31e-806b-4b1e-865b-bed017ebb067",
             "Value": {
                 "id": "f1b5bab6-29ea-4ea2-b978-0065e3627c1f",
@@ -1292,6 +1308,14 @@
                 "id": "da31445b-2432-4446-9d07-3176fd417ae1",
                 "resourcePath": "sprites\\ships_draft\\ships_draft.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c334f72b-c266-41cf-8542-1afb3745e09c",
+            "Value": {
+                "id": "d997a281-085d-4ce8-9dc6-e6f55f877e93",
+                "resourcePath": "sounds\\snd_next_sector\\snd_next_sector.yy",
+                "resourceType": "GMSound"
             }
         },
         {
