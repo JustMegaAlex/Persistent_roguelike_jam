@@ -17,6 +17,9 @@ current_behaviour = behaviour
 pursue_target = noone
 vision_range = 6
 
+// extra behavoiur patterns
+beh_agressive = false
+
 // patrol vars
 on_patrol = false
 patrol_path_len = 0

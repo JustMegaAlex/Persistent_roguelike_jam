@@ -14,6 +14,8 @@ switch battle_state {
 		
 		if abs(disth) < 5 {
 			eq_weapon.triggered = true
+			if eq_weapon.charge and beh_agressive == true
+				break
 			battle_state = Battle.manuver
 		}
 		
