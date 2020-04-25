@@ -9,7 +9,7 @@ list_actions = ds_list_create()
 
 //// form available actions list
 if obj_manned_ship.energy < obj_manned_ship.energy_capacity
-	ds_list_add(list_actions, "recombination")
+	//ds_list_add(list_actions, "recombination")
 if obj_manned_ship.energy
 	ds_list_add(list_actions, "jump")
 if obj_manned_ship.energy > 1
