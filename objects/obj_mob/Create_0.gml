@@ -29,7 +29,7 @@ patrol_segment_len = 0
 frame_active = true
 
 //// equipment
-eq_weapon = scr_eq_get_instance(obj_weap_crusher)
+eq_weapon = scr_eq_get_instance(choose(obj_weap_crusher, obj_weap_pulse))
 //eq_phase = scr_eq_get_instance(obj_equipment.ph_basic)
 eq_phase = noone
 

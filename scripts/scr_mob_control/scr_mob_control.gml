@@ -3,8 +3,10 @@
 
 pursue_target = noone
 
+var target_grid_dist = 100
+
 if instance_exists(obj_manned_ship) {
-	var target_grid_dist = abs(obj_manned_ship.i-i) + abs(obj_manned_ship.j-j)
+	target_grid_dist = abs(obj_manned_ship.i-i) + abs(obj_manned_ship.j-j)
 	if target_grid_dist <= vision_range {
 		pursue_target = obj_manned_ship
 		current_behaviour = Behav.persue

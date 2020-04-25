@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "029b9834-0d4c-4899-99f7-8d58a998392a",
+            "Value": {
+                "id": "cfbffcca-c94a-484f-a499-1fb0c3e545de",
+                "resourcePath": "objects\\obj_weap_pulse\\obj_weap_pulse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "02e499c1-6e36-4f94-b73d-00ee4e110f98",
             "Value": {
                 "id": "df3d0772-cb9c-40a1-a8b7-6fdef81401e6",
