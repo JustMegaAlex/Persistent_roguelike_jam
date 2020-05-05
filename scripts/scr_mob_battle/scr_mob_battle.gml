@@ -27,6 +27,8 @@ switch battle_state {
 		break
 	}
 	case Battle.move: {
+		if beh_agressive and disth < (b_oponent_dist * 0.1)
+			battle_state = Battle.shoot
 		if !manuvering--
 			battle_state = Battle.manuver
 		if !eq_weapon.alarm[1] and disth < b_oponent_dist * 0.25
