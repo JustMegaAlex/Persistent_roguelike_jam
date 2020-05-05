@@ -70,11 +70,20 @@ alarm[0] = 2
 first_blood = true
 
 //// sound
+//main theme
+main_theme_sound = snd_space_flight
+battle_theme_sound = snd_space_fight
+main_theme_switch_time = 1000
+
+bonus_sound = snd_bonus
+
 audio_master_gain(1)
 audio_sound_gain(snd_rocketlaunch, 0.3, 0)
-audio_sound_gain(snd_shot, 0.2, 0)
+audio_sound_gain(snd_shot, 0.07, 0)
 audio_sound_gain(snd_ship_explotion, 1.2, 0)
-audio_sound_gain(snd_bit_space, 0.6, 0)
+audio_sound_gain(bonus_sound, 0.4, 0)
+audio_sound_gain(battle_theme_sound, 0, 0)
 
 // main theme
-audio_play_sound(snd_bit_space, 1, true)
+audio_play_sound(main_theme_sound, 1, true)
+audio_play_sound(battle_theme_sound, 1, true)

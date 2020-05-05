@@ -19,6 +19,10 @@ if !battle_end {
 		synchronized = 1
 	}
 	
+	//// switch sound to battle theme
+	audio_sound_gain(obj_sys.battle_theme_sound, 1, obj_sys.main_theme_switch_time)
+	audio_sound_gain(obj_sys.main_theme_sound, 0, obj_sys.main_theme_switch_time)
+	
 	//// create asters
 	repeat aster_num {
 	    instance_create_layer(irandom(room_width), irandom(room_height), "Instances", obj_b_asteroid)
@@ -39,6 +43,10 @@ else {
 		room_goto(rm_return_to)	
 		
 		alarm[0] = 1
+		
+		//// switch sound to main theme
+		audio_sound_gain(obj_sys.battle_theme_sound, 0, obj_sys.main_theme_switch_time)
+		audio_sound_gain(obj_sys.main_theme_sound, 1, obj_sys.main_theme_switch_time)
 	}
 	else {
 		// in world room
